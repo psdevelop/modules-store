@@ -1,0 +1,41 @@
+<!-- Шаблон контейнера группы плиток - содержит шапку группы, контейнеры плиток -->
+<div class="WorkPlan__tiledView__tilesGroupElement-container  tilesContainerTdStatus{{statusIndex}}">
+   <!-- Элемент группы плитки - шапка, содержит атрибуты данных группы -->
+   <div class="WorkPlan__tiledView__tilesGroupElement"
+        data-id="{{item['id']}}" data-group-id="{{groupIndex}}" data-status-id="{{statusIndex}}" style="{{item['mapColorCSS']}}">
+
+      <!-- Блок информации ответственного по всей группе -->
+      <ws:partial template="{{ tilePhotoTemplate }}" respId="{{ item['ИдОтв'] }}" photoId="{{ item['ИдФото'] }}"
+                  respName="{{ item['ФИООтв'] }}" branchName="{{ item['branchName'] }}" photoSize="32"/>
+
+      <!-- Кнопка разворачивания/сворачивания группы -->
+      <div class="tiledView__tileWorkLng tiledView__tileGroupWorkLng">
+         <div class="WorkPlan__tiledView__tileGroupItemCnt">{{item['taskCnt']}}</div>
+         <div class="icon-16 icon-ExpandLight icon-primary action-hover WorkPlan__tiledView__tilesGroupElement-expander"></div>
+         <div class="icon-16 icon-CollapseLight icon-primary action-hover WorkPlan__tiledView__tilesGroupElement-collapser"></div>
+      </div>
+
+   </div>
+   <!-- Перебор плиток группы для их вывода -->
+   <ws:if data="{{ item['tasks'] && item['tasks'].length>0 }}">
+      <ws:for data="index, tile in item['tasks']">
+         <!-- Контейнер плитки, постоянный размер, выстраивание left (направо и вниз) -->
+         <div class="WorkPlan__tiledView__tileElement-container">
+            <!-- Плашка плитки разворачиваемая, для группы , элемент содежержит атрибуты данных плитки -->
+            <div class="WorkPlan__tiledView__tileElement WorkPlan__tiledView__GroupItem-TileElement
+                  WorkPlan__tiledView__tileElementLBackColor{{tile['tileBackColor']}}" data-id="{{tile['id']}}" data-sub-group-id="{{item['id']}}"
+                  data-group-id="{{groupIndex}}" data-status-id="{{statusIndex}}" data-doc-id="{{tile['docId']}}" data-base-doc-id="{{tile['baseDocId']}}"
+                  data-tile-code="{{tile['id']}}_{{statusIndex}}"  data-tile-type="{{tile['tilePointType']}}" data-link-doc-id="{{tile['docLinkId']}}"
+                  data-order="{{tile['orderNum']}}" style="{{tile['mapColorCSS']}}">
+               <!-- Шаблон содержимого плитки, аналогичен для плитки с группой и без-->
+               <ws:partial template="{{ tileTaskInfoTemplate }}" item="{{ tile }}" groupIndex="{{groupIndex}}" statusIndex="{{statusIndex}}" tilePhotoTemplate="{{ tilePhotoTemplate }}"
+                           respId="{{ item['ИдОтв'] }}" photoId="{{ item['ИдФото'] }}" respName="{{ item['ФИООтв'] }}" branchName="{{ item['branchName'] }}" movePointToPlan="{{movePointToPlan}}"
+                           workTimeAddFunction="{{column.workTimeAddFunction}}"
+                           workTimeCancelFunction="{{column.workTimeCancelFunction}}"
+                           worksDataLoadFunction="{{worksDataLoadFunction}}" openTaskDlg="{{openTaskDlg}}"
+                           workGroupTemplate="{{workGroupTemplate}}"  onWorksItemClick="{{onWorksItemClick}}" />
+            </div>
+         </div>
+      </ws:for>
+   </ws:if>
+</div>

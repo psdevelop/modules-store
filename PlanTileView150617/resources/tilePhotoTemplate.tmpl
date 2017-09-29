@@ -1,0 +1,75 @@
+<!-- Шаблон блока персональной информации с фото -->
+<!-- Если определены ид персоны и ид фото -->
+<ws:if data="{{respId}}">
+   <!--Кастомизация PersonInfo компонента,
+   так как он пропускает в текст тултипа имени
+   и подразделения служебные символы-->
+   <div class="Person-PersonInfo Person-PersonInfo__customTmpl">
+      <ws:SBIS3.Person.PersonPhoto
+              data="{{ {
+                  'personId': respId ,
+                  'photoId': photoId
+               } }}"
+              settings="{{ {'size': 32,
+                  'showMiniCard': true,
+                  'miniCardShowMode': 'hover'
+                  } }}"
+      />
+
+      <div class="Person-PersonInfo__mini-icons">
+         <div class="Person-PersonInfo__box-info">
+            <div class="Person-PersonInfo__wrapper-general-info ws-ellipsis" title="{{respName|sanitize}}">
+               <div class="Person-PersonInfo__limit-for-mark">
+                  <div class="ws-ellipsis">
+                     <div class="Person-PersonInfo__person-name ws-ellipsis">
+                        {{respName|sanitize}}
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="Person-PersonInfo__person-info Person-PersonInfo__person-info-bottom ws-ellipsis {{wrkIds && wrkIds.length > 1 ? ' Person-PersonInfo__person-info-noTopMargin' }}">
+            <ws:if data="{{ wrkIds && wrkIds.length > 1 }}">
+               <ws:if data="{{ wrkIds && wrkIds.length > 1 && wrkPhotoIds && wrkPhotoIds.length == wrkIds.length && wrkNames && wrkNames.length == wrkIds.length }}">
+                  <ws:for data="index, wrk in wrkIds">
+                     <ws:if data="{{ index > 0 }}">
+                        <i class="WorkPlan__tiledView__tileElement__smallPhoto" title="{{wrkNames[index]}}">
+                           <ws:SBIS3.Person.PersonPhoto
+                              data="{{ {'personId': wrk, 'photoId': wrkPhotoIds[index]} }}"
+                              settings="{{ {'size': 16} }}"
+                              />
+                        </i>
+                     </ws:if>
+                  </ws:for>
+               </ws:if>
+            </ws:if>
+            <ws:else>
+               <ws:if data="{{branchName}}">
+                  <span title="{{branchName | sanitize}}">
+                     {{branchName | sanitize}}
+                  </span>
+               </ws:if>
+            </ws:else>
+            </div>
+         </div>
+      </div>
+   </div>
+</ws:if>
+<!-- Не определен ответственный -->
+<ws:else>
+   <span class="not-responsible">
+      <ws:SBIS3.Person.PersonInfo
+            data="{{ {
+            'name': 'Без ответственного',
+            'photoData': {
+               'personId': null,
+               'photoId': null
+            },
+            'department':'',
+            'inline': true
+         } }}"
+            settings="{{ {
+            'photoSize': 32
+         } }}"
+            class="person-PersonInfo__fontSizeInherit"/>
+   </span>
+</ws:else>
