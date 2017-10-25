@@ -1,0 +1,367 @@
+<div class="WorkPlan__tiledView__tileElement_checkBox">
+    <span class="controls-ListView__itemCheckBox"/>
+</div>
+<div>
+    <!-- Шаблон содержимого плитки (внутри группы плиток и без группы) -->
+    <div class="tiledView__tileHeader">
+
+        <!-- Регламент пункта плана -->
+        <div class="tiledView__tileReglamentName">
+            <div class="tiledView__tileReglamentNameText">
+                <ws:if data="{{item['reglName']}}">
+                    {{item['reglName']}}
+                </ws:if>
+                <ws:else>
+                    Пункт плана
+                </ws:else>
+            </div>
+        </div>
+
+        <!-- Срок выполнения -->
+        <div class="tiledView__headerRight">
+            <div class="tiledView__taskMilestoneName">{{item['Веха.Название']}}&nbsp;</div>
+            <!-- Выводим признаки успешного выполнения в последнем столбце -->
+            <ws:if data="{{item['status'] == 4}}">
+                <ws:if data="{{item['planPointStatus'] == 2}}">
+                    <div class="icon-16 icon-Successful icon-done" title="Выполнен"></div>
+                </ws:if>
+                <ws:if data="{{item['planPointStatus'] == 3}}">
+                    <div class="icon-16 icon-Unsuccess icon-error" title="Не выполнен"></div>
+                </ws:if>
+            </ws:if>
+            <ws:if data="{{item['timeOverflow']}}">
+                <div class="icon-16 icon-Time icon-error"></div>
+            </ws:if>
+            <ws:else>
+                <div class="icon-16 icon-Time icon-disabled"></div>
+            </ws:else>
+            <div class="tiledView__taskTime {{item['timeOverflow'] ? ' tiledView__taskTime_Overflow' }}"
+                 title="Дата сдачи">
+                {{item['Срок']}}
+            </div>
+        </div>
+    </div>
+
+    <ws:if data="{{item['resultDocId']}}">
+        <div class="tiledView__tileWorkLng" title="Фактическое время">
+            <span data-bind="text: planDocsTimeResources/{{ item['docId'] }}">00:00</span>
+        </div>
+    </ws:if>
+
+    <!-- Вывод персональной информации с фото по ответственному за пункт плана -->
+    <ws:partial template="{{ tilePhotoTemplate }}" respId="{{ respId }}" photoId="{{ photoId }}"
+                respName="{{ respName }}"
+                branchName="{{ branchName }}"
+                wrkIds = "{{ item['wrkIds'] }}"
+                wrkPhotoIds = "{{ item['wrkPhotoIds'] }}"
+                wrkNames = "{{ item['wrkNames'] }}"
+                photoSize="32"/>
+
+    <!-- Выводим текст задачи в одну или две строки,
+    в зависимости от наличия текста критерия -->
+    <div class="tiledView__tileDescription {{item['criteria'] ? ' tiledView__tileDescriptionWithCriteria' }}" title="{{item['НазваниеПункта'] | sanitize}}">
+        {{item['НазваниеПункта'] | sanitize}}
+    </div>
+    <!-- Выводим критерий пол текстом задачи -->
+    <ws:if data="{{item['criteria']}}">
+        <div class="tiledView__tileCriteria" title="{{item['criteria'] | sanitize}}">
+            {{item['criteria'] | sanitize}}
+        </div>
+    </ws:if>
+
+    <!-- Нижняя строка информеров (сообщения, признак переноса и важности) -->
+    <div class="tiledView__bottomInformer">
+        <table>
+            <tr>
+                <td>
+                    <!--Кнопка сообщений у плитки-->
+                    <ws:SBIS3.CONTROLS.Button
+                            className="ws-Label-content WorkPlan__tiledView__tileElement-messagesButton WorkPlan__tiledView__tileElement__messagesCount"
+                            name="ПоказатьСообщения{{item['id']}}_{{statusIndex}}"
+                            icon="sprite:icon-16 icon-EmptyMessage icon-primary action-hover"
+                            tooltip="Сообщения"
+                            caption="{{ ((item['КоличествоСообщений'] && item['КоличествоСообщений'] > 0) ? item['КоличествоСообщений'] : '') }}">
+                        <ws:handlers onActivated="{{openTaskDlg}}"/>
+                    </ws:SBIS3.CONTROLS.Button>
+
+                </td>
+                <td>
+                    <!--Кнопка подзадач у плитки, показываем только у задач -->
+                    <ws:if data="{{item['resultDocId'] && item['tilePointType']==0}}">
+                        <ws:SBIS3.CONTROLS.Button className="ws-Label-content WorkPlan__tiledView__tileElement-tasksButton WorkPlan__tiledView__tileElement__tasksCount
+                            {{ item['КоличествоПодзадач'] && item['КоличествоПодзадач'] > 0 ? '' : ' WorkPlan__tiledView__tileElement__tasksCountHided' }}"
+                            name="ПоказатьСоставЗадачи{{item['id']}}_{{statusIndex}}"
+                            icon="sprite:icon-16 icon-TFTask icon-primary action-hover"
+                            tooltip="Подзадачи"
+                            caption="{{item['КоличествоПодзадач']}}">
+                            <ws:handlers onActivated="{{openTaskDlg}}"/>
+                         </ws:SBIS3.CONTROLS.Button>
+                    </ws:if>
+                </td>
+                <td>&nbsp;</td>
+                <td>
+                    <!--Кнопка переноса в другой план у плитки-->
+                    <span data-bind="html: moveTilesButtons/{{ item['id'] }}"/>
+                </td>
+                <td>
+                    <!--Значок Важно у плитки-->
+                    <ws:if data="{{item['Пометки'][1] || item['priority']>0}}">
+                        <div class="icon-16 icon-Flag icon-hover"></div>
+                    </ws:if>
+                </td>
+                <!-- Появляющаяся при раскрытии плитки кнопка открытия формы добавления работ -->
+                <td>
+                    <ws:if data="{{item['resultDocId'] && item['tilePointType'] != 2}}">
+                        <div class="tiledView__tileElement__hoveredTimeFormButton">
+                            <div class="icon-16 icon-Add icon-primary action-hover"></div>
+                            Время
+                        </div>
+                    </ws:if>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="WorkPlan__tiledView__tileElement-expander">
+        <div class="icon-16 icon-MarkCRightLight icon-primary"></div>
+    </div>
+
+    <div class="WorkPlan__tiledView__tileElement-collapser">
+        <div class="icon-16 icon-MarkCLeftLight icon-primary"></div>
+    </div>
+    <!-- Компонент таблицы с работами по пункта плана -->
+    <div class="Tile__Expand-container">
+        <ws:if data="{{item['resultDocId']}}">
+            <div id="DataPanel" class="Tile__Expand-container__addWorkForm">
+                <div class="Tile__Expand-container__addWorkForm-row">
+                    <table>
+                        <tr>
+                            <td>
+                                <!--Дата работы формы добавления работ у плитки-->
+                                <component data-component="SBIS3.CONTROLS.DatePicker"
+                                           name="ДатаВремяОтработанное{{item['id']}}_{{statusIndex}}">
+                                    <opt name="tabindex" value="0"/>
+                                    <opt name="text" value="{{item['planStartDate']}}"/>
+                                    <opt name="validateIfHidden">{{ true }}</opt>
+                                    <options name="validators" type="array">
+                                        <options>
+                                            <option name="validator" type="function"
+                                                    value="js!SBIS3.Plan.PlanTileView:prototype.validateDatePicker"/>
+                                            <option name="errorMessage" value="Введите дату!"/>
+                                        </options>
+                                        <options>
+                                            <option name="validator" type="function"
+                                                    value="js!SBIS3.Plan.PlanTileView:prototype.validateDatePickerPlanDates"/>
+                                            <option name="errorMessage" value="Дата не попадает в период плана!"/>
+                                        </options>
+                                    </options>
+                                </component>
+                            </td>
+                            <td>
+                                <label data-lmtype="Label"
+                                       class="ws-Label ws-Label-titleLeft ws-Label-ws-control Tile__Expand-container__floatLeftTime">
+                                    <span data-lmchild="label-title" class="ws-Label-title">с</span>
+                                    <!--Время начала работы формы добавления работ у плитки-->
+                                    <component data-component="SBIS3.CONTROLS.DatePicker" class="ws-Label-content">
+                                        <option name="name">ВремяНач{{item['id']}}_{{statusIndex}}</option>
+                                        <option name="calendar">false</option>
+                                        <opt name="text">09:00</opt>
+                                        <option name="mask">HH:II</option>
+                                        <opt name="tabindex" value="1"/>
+                                    </component>
+                                </label>
+                            </td>
+                            <td>
+                                <label data-lmtype="Label"
+                                       class="ws-Label ws-Label-titleLeft ws-Label-ws-control Tile__Expand-container__floatLeft">
+                                    <span data-lmchild="label-title" class="ws-Label-title">по</span>
+                                    <!--Время конца работы формы добавления работ у плитки-->
+                                    <component data-component="SBIS3.CONTROLS.DatePicker" class="ws-Label-content">
+                                        <opt name="tabindex" value="2"/>
+                                        <option name="name">ВремяКнц{{item['id']}}_{{statusIndex}}</option>
+                                        <opt name="text">10:00</opt>
+                                        <option name="calendar">false</option>
+                                        <option name="mask">HH:II</option>
+                                    </component>
+                                </label>
+                            </td>
+                            <td>
+                                <label data-lmtype="Label"
+                                       class="ws-Label ws-Label-titleLeft ws-Label-ws-control Tile__Expand-container__floatLeft">
+                                    <span data-lmchild="label-title" class="ws-Label-title">всего</span>
+                                    <!--Длительность работы формы добавления работ у плитки-->
+                                    <component data-component="SBIS3.CONTROLS.DatePicker"
+                                               class="ws-Label-content wtm-TimeMark__GrayText__">
+                                        <opt name="tabindex" value="3"/>
+                                        <option name="name">Время{{item['id']}}_{{statusIndex}}</option>
+                                        <opt name="text">01:00</opt>
+                                        <option name="calendar">false</option>
+                                        <option name="mask">HH:II</option>
+                                    </component>
+                                </label>
+                            </td>
+                            <td>
+                                <!--Кнопка дабавления работы формы добавления работ у плитки-->
+                                <ws:SBIS3.CONTROLS.IconButton
+                                        name="КнопкаДобавить{{item['id']}}_{{statusIndex}}"
+                                        className="tileElement__Works__addButton controls-IconButton__round-border-24"
+                                        tileCode="{{item['id']}}_{{statusIndex}}"
+                                        icon="sprite:icon-16 icon-Yes icon-done"
+                                        tooltip="Применить"
+                                        tabindex="6">
+                                    <ws:handlers onActivated="{{ workTimeAddFunction }}"/>
+                                </ws:SBIS3.CONTROLS.IconButton>
+
+                                <!--Кнопка дабавления работы формы добавления работ у плитки-->
+                                <ws:SBIS3.CONTROLS.IconButton
+                                        name="КнопкаОтменить{{item['id']}}_{{statusIndex}}"
+                                        className="tileElement__Works__closeButton "
+                                        icon=""
+                                        tooltip="Отмена"
+                                        tabindex="7">
+                                    <ws:handlers onActivated="{{ workTimeCancelFunction }}"/>
+                                </ws:SBIS3.CONTROLS.IconButton>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+                <div class="Tile__Expand-container__addWorkForm-row">
+                    <!--Поле выбора исполнителя формы добавления работ у плитки-->
+                    <component data-component="SBIS3.Staff.Choice" class="StaffChoice__fieldLink-container">
+                        <opt name="tabindex" value="4"/>
+                        <option name="name" value="ЧастноеЛицо{{item['id']}}_{{statusIndex}}"/>
+                        <option name="tabindex" value="1"/>
+                        <option name="linkedDisplayField">Название</option>
+                        <option name="keyField" value="@Лицо"/>
+                        <options name="selectedKeys" type="array">
+                            <option bind="tilesCurrUser/{{ item['id'] }}"/>
+                        </options>
+                        <opt name="placeholder">Сотрудник</opt>
+                        <option name="cannotBeEmpty">true</option>
+                        <option name="selectionType">leaf</option>
+                        <opt name="multiselect">false</opt>
+                        <options name="handlers">
+                            <option name="onSelectedItemsChange" type="function"
+                                    value="js!SBIS3.Plan.PlanTileView:prototype.onWorkStaffChoice"/>
+                        </options>
+                        <options name="dialogSettings">
+                            <option name="showChooseOrg">false</option>
+                            <option name="restrictionOffice" value="department"/>
+                            <option name="selectionType">leaf</option>
+                            <options name="fields">
+                                <options name="ourOrg">
+                                    <option name="valueFrom">field</option>
+                                    <option name="valueField">ДокументНашаОрганизация</option>
+                                    <option name="setInContext">false</option>
+                                </options>
+                            </options>
+                        </options>
+                        <options name="validators" type="array">
+                            <options>
+                                <option name="validator" type="function"
+                                        value="js!SBIS3.Plan.PlanTileView:prototype.validateStaffChoice"/>
+                                <option name="errorMessage" value="Выберите сотрудника!"/>
+                            </options>
+                        </options>
+                    </component>
+                    <!--Поле комментария к работе формы добавления работ у плитки-->
+                    <component data-component="SBIS3.CONTROLS.TextArea"
+                               name="СтрокаКомментарий{{item['id']}}_{{statusIndex}}"
+                               class="tileElement__WorksAdd__textDescription">
+                        <opt name="tabindex" value="5"/>
+                        <option name="tooltip">Дополнительная информация</option>
+                        <option name="placeholder">Дополнительная информация</option>
+                        <option name="minLinesCount">1</option>
+                        <option name="text"></option>
+                        <options name="autoResize">
+                            <option name="state">true</option>
+                            <option name="maxLinesCount">10</option>
+                        </options>
+                    </component>
+                </div>
+
+            </div>
+
+            <component data-component="SBIS3.CONTROLS.ScrollContainer" class="TileElement__Works__ScrollContainer">
+                <option name="content">
+                    <!--Компонент таблицы работ у плитки-->
+                    <ws:SBIS3.CONTROLS.DataGridView
+                            name="planCheckWorks{{item['id']}}_{{statusIndex}}"
+                            className="tileElement__planCheck__Works controls-DataGridView__hasSeparator"
+                            showPaging="{{false}}"
+                            showHead="{{false}}"
+                            multiSelect="{{false}}"
+                            itemsDragNDrop="{{false}}"
+                            itemsActions="{{[]}}"
+                            scrollPaging="{{false}}"
+                            idProperty="@Работа"
+                            easyGroup="{{true}}"
+                            editMode="autoadd">
+                        <ws:filter
+                                ИдСотрудников="{{ item['wrkIds'] }}"
+                                Документ="{{ item['docId'] }}"
+                                ДатаНач="{{ 'filter/ФильтрПланДатаНач' | bind }}"
+                                ДатаКнц="{{ 'filter/ФильтрПланДатаКнц' | bind }}"
+                                ВсеСотрудники="{{ true }}"
+                        />
+                        <ws:groupBy
+                                field="ДатаСтрока"
+                        />
+                        <ws:handlers onDataLoad="{{worksDataLoadFunction}}"
+                                     onItemClick="{{onWorksItemClick}}"/>
+                        <ws:columns>
+                            <ws:Array>
+                                <ws:Object
+                                        field="ДатаСтрока"
+                                        className="Tile__worksTable__dateTd"/>
+                                <ws:Object
+                                        field="ВремяСтрока"
+                                        className="Tile__worksTable__timeTd"/>
+                                <ws:Object
+                                        field="ЧастноеЛицо.Лицо.Название"
+                                        className="Tile__worksTable__responseTd"/>
+                                <ws:Object
+                                        field="Примечание"
+                                        className="Tile__worksTable__taskTextTd"/>
+                            </ws:Array>
+                        </ws:columns>
+                    </ws:SBIS3.CONTROLS.DataGridView>
+                </option>
+            </component>
+        </ws:if>
+        <ws:else>
+            <div class="TileElement__Works__ExpandPointContainer"></div>
+        </ws:else>
+
+        <!-- Нижняя строка раскрытой плитки -->
+        <ws:if data="{{item['comment'] || item['resultDocId'] && item['tilePointType'] == 0 && item['phaseName']}}">
+           <div class="expand-TiledView__bottomLine">
+               <table>
+                   <tr>
+                       <td>
+                           <ws:if data="{{item['comment']}}">
+                               <span class="pp_cs_icon icon-16 icon-Handwrite2 icon-disabled expand-TiledView__bottomLine__commentIcon"/>
+                               <div class="expand-TiledView__bottomLine__commentLine" title="{{item['comment']}}">
+                                   {{item['comment']}}
+                               </div>
+                           </ws:if>
+                       </td>
+                       <td class="expand-TiledView__bottomLine__ReassignButtonTd">
+                           <!-- Кнопка с именем фазы пункта плана,
+                                вызывает диалог закрытия фазы пункта плана,
+                                показываем только у задач -->
+                           <ws:if data="{{item['resultDocId'] && item['tilePointType'] == 0}}">
+                               <div class="expand-TiledView__bottomLine__ReassignButton">
+                                   {{item['phaseName']}}
+                               </div>
+                           </ws:if>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+        </ws:if>
+
+    </div>
+</div>

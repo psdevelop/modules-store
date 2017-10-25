@@ -1,0 +1,38 @@
+<div class="tile-view-settings">
+
+    <div class="tile-view-settings-header">
+        <div class="tile-view-settings-header-add">
+            <span>Настройки столбцов</span>
+        </div>
+        <div class="tile-view-settings-header-save">
+            <ws:SBIS3.CONTROLS.Button
+                    name="tile-view-settings-header-save"
+                    primary="{{ true }}"
+                    caption="Сохранить"
+                    visible="{{ false }}"
+            />
+        </div>
+    </div>
+
+    <div class="tile-view-settings-body">
+        <ws:SBIS3.CONTROLS.TreeDataGridView
+                name="tile-view-settings-body"
+                idProperty="id"
+                parentProperty="Раздел"
+                className="{{ cssTreeDataGridView }}"
+                displayProperty="Название"
+                emptyHTML="Нет записей"
+                allowEnterToFolder="{{ false }}"
+                multiselect="{{ false }}">
+            <ws:columns>
+                <ws:Array>
+                    <ws:Object
+                            title="Заголовок"
+                            field="Название"
+                            className="controls-DragNDropMixin__notDraggable">
+                    </ws:Object>
+                </ws:Array>
+            </ws:columns>
+        </ws:SBIS3.CONTROLS.TreeDataGridView>
+    </div>
+</div>

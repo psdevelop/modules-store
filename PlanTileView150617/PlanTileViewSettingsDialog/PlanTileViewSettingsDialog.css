@@ -1,0 +1,25 @@
+.tile-view-settings {
+   padding: 8px;
+}
+.tile-view-settings-header{
+   padding-bottom: 12px;
+}
+.tile-view-settings-header-add {
+   font-style: normal;
+   font-size: 18px;
+   text-align: left;
+   font-weight: bold;
+   display: inline-block;
+}
+
+.tile-view-settings-header-save {
+   float: right;
+}
+
+.tile-view-settings .controls-DataGridView__thead {
+   display: none;
+}
+
+.tile-view-settings-rule-list .controls-ListView__item-type-node .controls-DataGridView__td__checkBox .controls-ListView__itemCheckBox {
+   display: none
+}
