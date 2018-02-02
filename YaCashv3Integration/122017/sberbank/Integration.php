@@ -96,7 +96,7 @@ class Integration {
 
 		$result = array(
 			'cartItems' => array(
-				'items' => $this->prepareCheckItems($itemList),
+				'items' => $this->prepareCheckItems($itemList, $order),
 			),
 		);
 
@@ -106,16 +106,34 @@ class Integration {
 	/**
 	 * Выполняет подготовку данных товаров для чека
 	 * @param array $itemList
+	 * @param \order $order заказ
 	 * @return array данные о товарах
 	 */
-	private function prepareCheckItems(array $itemList) {
+	private function prepareCheckItems(array $itemList, \order $order) {
 		$list = array();
 
 		$position = 1;
+		$priceCalculated = 0;
+		$countItems = count($itemList);
+		$storedOrderPrice = $this->getPriceInMinUnits($order->getActualPrice());
+
 		/**  @var \orderItem $item */
 		foreach ($itemList as $item) {
-			$priceInMinUnits = $this->getPriceInMinUnits( $item->getPrice() );
+			if ($item instanceof \orderItem){
+				$priceInMinUnits = $this->getItemPriceWithDiscount($item, $order);			
+			} else {
+				$priceInMinUnits = $this->getPriceInMinUnits($item->getTotalActualPrice());				
+			}
 
+			$itemsAmount = $item->getAmount();
+			$itemPrice = $priceInMinUnits * $itemsAmount;
+			$isLast = $position == $countItems;
+			$calculatedOrderPrice = $priceCalculated + $itemPrice;
+
+			if ($isLast  && $calculatedOrderPrice !== $storedOrderPrice) {
+				$priceInMinUnits += ($storedOrderPrice - $calculatedOrderPrice) / $itemsAmount;
+			}
+			
 			$itemInfo = array();
 			$itemInfo['positionId'] = $position;
 			$itemInfo['name'] = $item->getName();
@@ -135,21 +153,44 @@ class Integration {
 			$list[] = $itemInfo;
 
 			$position += 1;
+			$priceCalculated += $itemInfo['itemAmount'];
 		}
 
 		return $list;
 	}
+	
+	/**
+	 * Возвращает цену товара с учётом скидок
+	 * @param \orderItem $item товар в заказе
+	 * @param \order $order заказ
+	 * @return int цена товара со скидкой
+	 */
+	private function getItemPriceWithDiscount(\orderItem $item, \order $order) {
+		$itemAmount = $item->getAmount();
+		$itemPrice = $item->getTotalActualPrice() / $itemAmount;
+		$orderDiscount = $order->getDiscount();
 
+		if ($orderDiscount === null) {
+			return $this->getPriceInMinUnits($itemPrice);
+		}
+
+		if ($orderDiscount->getDiscountModificator() instanceof \absoluteDiscountModificator) {
+			$percent = ($order->getActualPrice() - $order->getDeliveryPrice()) / $order->getOriginalPrice();
+			$itemPrice = $itemPrice * $percent;
+			return round($this->getPriceInMinUnits($itemPrice), -1, PHP_ROUND_HALF_DOWN);
+		}
+
+		$itemPrice = $order->getDiscount()->recalcPrice($itemPrice);
+		return $this->getPriceInMinUnits($itemPrice);
+	}
+	
 	/**
 	 * Возвращает цену в минимальных единицах валюты
 	 * @param float $price
 	 * @return int
 	 */
 	private function getPriceInMinUnits($price) {
-		$mantissa = strstr ($price, '.');
-		$cents = substr($mantissa, 1, 2);
-
-		return ( intval($price) * 100 ) + intval($cents);
+		return round(($price * 100), 0);
 	}
 
 	/**

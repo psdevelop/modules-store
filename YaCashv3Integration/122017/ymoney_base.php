@@ -11,6 +11,7 @@ use YandexCheckout\Common\Exceptions\TooManyRequestsException;
 use YandexCheckout\Common\Exceptions\InvalidRequestException;
 use YandexCheckout\Model\Notification\NotificationWaitingForCapture;
 use YandexCheckout\Request\Payments\CreatePaymentResponse;
+use YandexCheckout\Request\Payments\AbstractPaymentResponse;
 
 /**
  * Базовый класс платежной системы Яндекс.Касса
@@ -49,8 +50,11 @@ class custom_paysystem_ymoney_base extends custom_paysystem_base {
 
 	const PAYSYSTEM_ID_PREFIX = 'ymoney_';
 
+	/** @const PAYMENT_CREATE_ACTION тип запроса API v3 для создания платежв */
 	const PAYMENT_CREATE_ACTION = 'payment.create';
+	/** @const PAYMENT_CAPTURE_ACTION тип запроса API v3 для подтверждения платежв */
 	const PAYMENT_CAPTURE_ACTION = 'payment.capture';
+	/** @const PAYMENT_CANCEL_ACTION тип запроса API v3 для отмены платежв */
 	const PAYMENT_CANCEL_ACTION = 'payment.cancel';
 
 	public function __construct() {
@@ -61,7 +65,7 @@ class custom_paysystem_ymoney_base extends custom_paysystem_base {
 		$this->isUseAPI3v               = (bool) $this->getAuthorInfoField('yandex_cashbox_use_api3v');
 		$this->cashboxShopId            = (string) $this->getAuthorInfoField('yandex_cashbox_shop_id');
 		$this->cashboxKey               = (string) $this->getAuthorInfoField('yandex_cashbox_key');
-		if($this->isUseAPI3v) {
+		if ($this->isUseAPI3v) {
 			$this->checkoutClient = new YandexCheckout\Client();
 			$this->checkoutClient->setAuth($this->cashboxShopId, $this->cashboxKey);
 		}
@@ -88,7 +92,7 @@ class custom_paysystem_ymoney_base extends custom_paysystem_base {
 				return false;
 			}
 
-			return (boolean)$this->umiObject->getValue('active') && $isShopParamsFull;
+			return (boolean) $this->umiObject->getValue('active') && $isShopParamsFull;
 		}
 
 		return false;
@@ -100,7 +104,7 @@ class custom_paysystem_ymoney_base extends custom_paysystem_base {
 	 * @return boolean true - если запрос валиден, false в противном случае
 	 */
 	public function checkSignature() {
-		if(!strlen($this->password)) return false;
+		if (!strlen($this->password)) return false;
 
 		$hash_pieces   = array();
 		$hash_pieces[] = getRequest('action');
@@ -277,61 +281,101 @@ class custom_paysystem_ymoney_base extends custom_paysystem_base {
 	}
 
 	/**
-	 * Подтверждение выполнения платежа
+	 * Обрабатывает платеж со статусом необходимости подтверждения
 	 * для API Яндекс-кассы 3 версии
 	 *
-	 * @param YandexCheckout\Model\PaymentInterface  $payment Объект платежа, передаваемый в
+	 * @param PaymentInterface  $payment Объект платежа, передаваемый в
 	 * нотификации API при его подтверждении
 	 *
 	 * @return mixed Результат подтверждения
 	 */
-	protected function capturePayment(YandexCheckout\Model\PaymentInterface $payment) {
-		if (!$this->checkSignatureAPIv3($payment)) {
-			return $this->cancelPayment($payment, getLabel('yandex-api-order-hash-err', 'emarket'));
-		}
-
+	protected function processingWaitForCapture(PaymentInterface $payment) {
 		$paymentMetadata = ($metadataObject = $payment->getMetadata()) ?
 			$metadataObject->toArray() : array();
 
-		$orderId = (int) $paymentMetadata['orderNumber'];
-		$order   = order::get($orderId);
+		$orderId = isset($paymentMetadata['orderNumber']) ? (int) $paymentMetadata['orderNumber'] : 0;
+		$md5 = isset($paymentMetadata['md5']) ? (string) $paymentMetadata['md5'] : '';
+		$order = order::get($orderId);
 
 		if ($order instanceof order == false) {
-			return $this->cancelPayment($payment, getLabel('yandex-api-order-not-found', 'emarket'));
+			return $this->processingCancel($payment, getLabel('yandex-api-order-not-found', 'emarket'));
+		}
+
+		if ( strcasecmp($this->getSignature($order), $md5) || !strlen($md5) ) {
+			return $this->processingCancel($payment, getLabel('yandex-api-order-hash-err', 'emarket'), $order);
 		}
 
 		$orderSum = $order->getActualPrice();
 		$amount   = floatval($payment->getAmount()->getValue());
 
 		if (order::getStatusByCode('accepted', 'order_payment_status') == $order->getPaymentStatus()) {
-			return $this->cancelPayment( $payment, getLabel('yandex-api-order-already-paid', 'emarket'));
+			return $this->processingCancel( $payment, getLabel('yandex-api-order-already-paid', 'emarket'), $order);
 		}
 
-		if (abs($orderSum - $amount) >= 0.01) {
-			return $this->cancelPayment($payment, getLabel('yandex-api-prices-mismatch', 'emarket'));
+		if (abs($orderSum - $amount) > 0) {
+			return $this->processingCancel($payment, getLabel('yandex-api-prices-mismatch', 'emarket'), $order);
 		}
 
-		$order->setOrderStatus('accepted');
-		$order->setPaymentStatus('accepted');
-		$order->setValue('payment_document_num', $payment->getId());
+		$captureResult = $this->processingPayment($payment, self::PAYMENT_CAPTURE_ACTION);
+		$isSuccessCapture = isset($captureResult['success']);
+
+		$this->setOrderStatus($order,
+			array(
+				'orderStatus'   => $isSuccessCapture ? 'accepted' : 'error',
+				'paymentStatus' => $isSuccessCapture ? 'accepted' : 'declined',
+				'paymentId'     => $payment->getId()
+			)
+		);
+
+		return $captureResult;
+	}
+
+	/**
+	 * Устанавливает статус заказа а также, при необходимости
+	 * статус его оплаты и внешний ид платежа
+	 *
+	 * @param order $order Объект заказа
+	 * @param array $orderParams Параметры заказа
+	 *
+	 * @return null
+	 */
+	private function setOrderStatus(order $order, $orderParams) {
+		if (empty($orderParams['orderStatus'])) {
+			return;
+		}
+
+		$order->setOrderStatus($orderParams['orderStatus']);
+		if (isset($orderParams['paymentStatus'])) {
+			$order->setPaymentStatus($orderParams['paymentStatus']);
+		}
+		if (isset($orderParams['paymentId'])) {
+			$order->setValue('payment_document_num', $orderParams['paymentId']);
+		}
 		$order->commit();
-
-		return $this->processingPayment($payment, self::PAYMENT_CAPTURE_ACTION);
+		return;
 	}
 
 	/**
 	 * Осуществляет отмену и формирует массив данных, возвращаемых
 	 * при отмене при подтверждении
 	 *
-	 * @param YandexCheckout\Model\PaymentInterface $payment Объект платежа
+	 * @param PaymentInterface $payment Объект платежа
 	 * @param string $cancelReason Текст причины отмены
+	 * @param mixed $order Объект заказа - опциональный
 	 *
 	 * @return array
 	 */
-	function cancelPayment(YandexCheckout\Model\PaymentInterface $payment, $cancelReason) {
-		$apiResult = $this->processingPayment($payment, self::PAYMENT_CANCEL_ACTION);
-		return array_merge( is_array($apiResult) ? $apiResult : array(),
-			array('cancel' => $cancelReason) );
+	protected function processingCancel(PaymentInterface $payment, $cancelReason, $order = NULL) {
+		$apiResult = (array) $this->processingPayment($payment, self::PAYMENT_CANCEL_ACTION);
+		if (isset($order)) {
+			$this->setOrderStatus($order,
+				array(
+					'orderStatus'   => 'error',
+					'paymentId'     => $payment->getId()
+				)
+			);
+		}
+		return array_merge( $apiResult, array('cancel' => $cancelReason) );
 	}
 
 	/**
@@ -340,7 +384,7 @@ class custom_paysystem_ymoney_base extends custom_paysystem_base {
 	 *
 	 * @param mixed $payment Объект платежа, возвращаемого при его подтверждении
 	 * @param string $action Тип запроса - создание, подтверждение или отмена
-	 * @param mixed $order Объект заказа, опциональный, необходим при создании заказа
+	 * @param mixed $order Объект заказа, опциональный, необходим при создании платежа
 	 *
 	 * @return mixed Результат обращения к API
 	 */
@@ -348,82 +392,19 @@ class custom_paysystem_ymoney_base extends custom_paysystem_base {
 		try {
 
 			if (strcmp($action, self::PAYMENT_CREATE_ACTION) == 0 && isset($order)) {
-				$domain = $order->getDomain();
-				if (!$domain) {
-					$domain = domainsCollection::getInstance()->getDefaultDomain();
-				}
-
-				if (!$domain) {
-					return array('error' => getLabel('yandex-api-domain-name-err', 'emarket'));
-				}
-
-				$hashPieces   = array();
-				$hashPieces[] = $order->getId();
-				$hashPieces[] = $order->getCustomerId();
-				$hashPieces[] = ceil($order->getActualPrice());
-				$hashPieces[] = $this->cashboxShopId;
-				$hashPieces[] = $this->cashboxKey;
-
-				return $this->checkoutClient->createPayment(
-					array_merge(
-						array(
-							'amount' => array(
-								'value'    => $order->getActualPrice(),
-								'currency' => 'RUB'
-							),
-							'confirmation'   => array(
-								'type'       => 'redirect',
-								'return_url' => 'http://' . $domain->getHost() . '/emarket/purchase/result/done/' .
-									'?order_id=' . $order->getId(),
-							),
-							'metadata' => array(
-								'customerNumber' => $order->getCustomerId(),
-								'orderNumber'    => $order->getId(),
-								'cms_name'       => 'umi',
-								'md5'            => md5(implode(';', $hashPieces))
-							),
-						),
-						$this->getPaymentMethodData($order)
-					),
-					uniqid('', true)
-				);
+				return $this->createPayment($order);
 			}
 
 			if (!($payment instanceof YandexCheckout\Model\PaymentInterface)) {
 				return array('error' => getLabel('yandex-api-payment-uncorrect-obj', 'emarket'));
 			}
 
-			if (strcmp($action, self::PAYMENT_CAPTURE_ACTION) == 0 && isset($payment)) {
-				$response = $this->checkoutClient->capturePayment(
-					array(
-						'amount'   => $payment->getAmount()->getValue(),
-						'currency' => 'RUB'
-					),
-					$payment->getId(),
-					uniqid('', true)
-				);
-
-
-				if (($responseStatus = $response->getStatus()) === 'succeeded') {
-					return array('success' => getLabel('yandex-api-payment-captured-success', 'emarket'));
-				} else {
-					return array('error'   => getLabel('yandex-api-payment-captured-err', 'emarket') .
-						' Статус: ' . $responseStatus);
-				}
+			if (strcmp($action, self::PAYMENT_CAPTURE_ACTION) == 0) {
+				return $this->capturePayment($payment);
 			}
 
-			if (strcmp($action, self::PAYMENT_CANCEL_ACTION) == 0 && isset($payment)) {
-				$response = $this->checkoutClient->cancelPayment(
-					$payment->getId(),
-					uniqid('', true)
-				);
-
-				if (($responseStatus = $response->getStatus()) === 'canceled') {
-					return array('success' => getLabel('yandex-api-payment-cancel-success', 'emarket'));
-				} else {
-					return array('error'   => getLabel('yandex-api-payment-cancel-err', 'emarket') .
-						'Статус: ' . $responseStatus);
-				}
+			if (strcmp($action, self::PAYMENT_CANCEL_ACTION) == 0) {
+				return $this->cancelPayment($payment);
 			}
 
 		} catch (YandexCheckout\Common\Exceptions\UnauthorizedException $uatex) {
@@ -455,39 +436,202 @@ class custom_paysystem_ymoney_base extends custom_paysystem_base {
 	}
 
 	/**
-	 * Проверяет валидность запроса путем проверки md5 сигнатуры
-	 * вариант для 3 версии API
+	 * Отправляет запрос на создание и возвращает объект
+	 * платежа для API версии 3 Яндекс-Кассы либо информацию об ошибке
 	 *
-	 * @param YandexCheckout\Model\PaymentInterface $payment Объект платежа
+	 * @param mixed $order Объект заказа, опциональный, необходим при создании платежа
 	 *
-	 * @return boolean true - если запрос валиден, false в противном случае
+	 * @return mixed
 	 */
-	public function checkSignatureAPIv3(YandexCheckout\Model\PaymentInterface $payment) {
-		if(!strlen($this->cashboxKey)) return false;
+	protected function createPayment(order $order) {
+		$domain = $order->getDomain();
+		if (!$domain) {
+			$domain = domainsCollection::getInstance()->getDefaultDomain();
+		}
 
-		$paymentMetadata = ($metadataObject = $payment->getMetadata()) ?
-			$metadataObject->toArray() : array();
-		$md5 = (string) $paymentMetadata['md5'];
+		if (!$domain) {
+			return array('error' => getLabel('yandex-api-domain-name-err', 'emarket'));
+		}
 
-		$hashPieces   = array();
-		$hashPieces[] = (string) $paymentMetadata['orderNumber'];
-		$hashPieces[] = (string) $paymentMetadata['customerNumber'];
-		$hashPieces[] = ceil(floatval($payment->getAmount()->getValue()));
-		$hashPieces[] = $this->cashboxShopId;
-		$hashPieces[] = $this->cashboxKey;
-
-		$hashString   = md5(implode( ';', $hashPieces));
-
-		return strcasecmp($hashString, $md5) == 0 && strlen($md5) > 0;
+		return $this->checkoutClient->createPayment(
+			array_merge(
+				array(
+					'amount' => array(
+						'value'    => $order->getActualPrice(),
+						'currency' => 'RUB'
+					),
+					'confirmation'   => array(
+						'type'       => $this->getConfirmationType(),
+						'return_url' => 'http://' . $domain->getHost() . '/emarket/purchase/result/done/' .
+							'?order_id=' . $order->getId(),
+					),
+					'metadata' => array(
+						'customerNumber' => $order->getCustomerId(),
+						'orderNumber'    => $order->getId(),
+						'cms_name'       => 'umi',
+						'md5'            => $this->getSignature($order)
+					),
+				),
+				$this->getPaymentMethodData($order)
+			),
+			$this->createIdempotenceKey()
+		);
 	}
 
 	/**
-	 * Возвращает признак использования API 3 версии
+	 * Отправляет запрос на подтверждение платежа
+	 * для API версии 3 Яндекс-Кассы и возвращает информация о его успешности
 	 *
-	 * @return boolean
+	 * @param PaymentInterface $payment Объект подтверждаемого платежа
+	 *
+	 * @return array
 	 */
-	public function getIsUseAPI3v() {
-		return $this->isUseAPI3v;
+	protected function capturePayment(PaymentInterface $payment) {
+		return $this->checkCaptureResponse(
+			$this->checkoutClient->capturePayment(
+				array(
+					'amount'   => $payment->getAmount()->getValue(),
+					'currency' => 'RUB'
+				),
+				$payment->getId(),
+				$this->createIdempotenceKey()
+			),
+			'succeeded');
+	}
+
+	/**
+	 * Отправляет запрос на отмену платежа
+	 * для API версии 3 Яндекс-Кассы и возвращает информация о его успешности
+	 *
+	 * @param PaymentInterface $payment Объект отменяемого платежа
+	 *
+	 * @return array
+	 */
+	protected function cancelPayment(PaymentInterface $payment) {
+		return $this->checkCaptureResponse(
+			$this->checkoutClient->cancelPayment(
+				$payment->getId(),
+				$this->createIdempotenceKey()
+			),
+			'canceled');
+	}
+
+	/**
+	 * Проверяет успешность выполнения подтверждения или отмены платежа
+	 * для API версии 3 Яндекс-Кассы и возвращает информация о ней
+	 *
+	 * @param AbstractPaymentResponse $response Объект
+	 * ответа API Яндекс-кассы версии 3 на запрос
+	 * @param string $responseCode Строковый код ожидаемого статуса платежа
+	 *
+	 * @return array
+	 */
+	protected function checkCaptureResponse(AbstractPaymentResponse $response,
+		$responseCode) {
+		if (($responseStatus = $response->getStatus()) === $responseCode) {
+			return array('success' => getLabel('yandex-api-payment-captured-success', 'emarket'));
+		}
+
+		return array('error'   => getLabel('yandex-api-payment-captured-err', 'emarket') .
+				' Статус: ' . $responseStatus);
+	}
+
+	/**
+	 * Формирует и возвращает сигнатуру для заказа
+	 * для 3 версии API
+	 *
+	 * @param order $order Объект заказа
+	 *
+	 * @return string
+	 */
+	private function getSignature(order $order) {
+		return md5(
+			implode( ';',
+				 array(
+					 $order->getId(),
+					 $order->getCustomerId(),
+					 ceil($order->getActualPrice()),
+					 $this->cashboxShopId,
+					 $this->cashboxKey
+				 )
+			));
+	}
+
+	/**
+	 * Создает и возвращает ключ идемпотентности для запросов к API 3 версии
+	 *
+	 * @return string
+	 */
+	private function createIdempotenceKey() {
+		return uniqid('', true);
+	}
+
+	/**
+	 * Обрабатывает оповещение от API Яндекс-Кассы 3 версии,
+	 * логирует ошибки и отмены и возвращает результат
+	 *
+	 * @return string
+	 */
+	protected function callbackApi3v() {
+		if ( strlen( $requestBody = (string) file_get_contents('php://input') ) == 0) {
+			return 'Missing params!';
+		}
+		$notificationData = json_decode($requestBody, true);
+		if (json_last_error() !== JSON_ERROR_NONE) {
+			return getLabel('yandex-api-error-json-parsing', 'emarket');
+		}
+		$logMsg = getLabel('yandex-api-payment-captured-success', 'emarket');
+		$captureResult = false;
+
+		try {
+
+			$notificationWaitForCapture = new NotificationWaitingForCapture(
+				$notificationData
+			);
+			$captureResult = $this->processingWaitForCapture($payment = $notificationWaitForCapture->getObject());
+			$logMsg        = 'capture payment, id=' . $payment->getId() . ', captureResult=' .
+				var_export( $captureResult, true) . ', requestBody=' . $requestBody;
+
+		} catch (YandexCheckout\Common\Exceptions\ApiException $apiex) {
+			$logMsg = getLabel('yandex-api-not-correct-request', 'emarket') . $apiex->getMessage();
+		} catch (YandexCheckout\Common\Exceptions\InvalidRequestException $irex) {
+			$logMsg = getLabel('yandex-api-bad-request', 'emarket') . $irex->getMessage();
+		} catch (Exception $ex) {
+			$logMsg = getLabel('yandex-api-bad-payment-capture', 'emarket') . $ex->getMessage();
+		}
+
+		if (is_array($captureResult) && (isset($captureResult['error']) || isset($captureResult['cancel'])) ||
+			$captureResult === false) {
+			umihost_system_logger::getInstance()->addLog(__CLASS__, $logMsg,
+				umihost_system_logger::LEVEL_ERROR);
+		}
+
+		return $logMsg;
+	}
+
+	/**
+	 * Создает объект платежа через API Яндекс-Кассы 3 версии
+	 * и возвращает ссылку для перехода на него, либо описание ошибки
+	 *
+	 * @param int $orderId Идентификатор заказа
+	 *
+	 * @return mixed
+	 */
+	protected function getNewPaymentApi3v($orderId) {
+		if (!$orderId) {
+			return '';
+		}
+
+		$order = order::get($orderId);
+
+		$mixedAPIResult = $this->processingPayment(NULL, self::PAYMENT_CREATE_ACTION, $order);
+		if ($mixedAPIResult instanceof CreatePaymentResponse) {
+			$confirmation = $mixedAPIResult->getConfirmation();
+			return $confirmation instanceof ConfirmationRedirect ?
+				$confirmation->getConfirmationUrl() : '';
+		}
+
+		return $mixedAPIResult;
 	}
 
 	/**
@@ -539,39 +683,7 @@ class custom_paysystem_ymoney_base extends custom_paysystem_base {
 	 */
 	public function callback() {
 		if ($this->isUseAPI3v) {
-
-			if ( strlen( $requestBody = (string) file_get_contents('php://input') ) == 0) die('Missing params!');
-			$notificationData = json_decode($requestBody, true);
-			if (json_last_error() !== JSON_ERROR_NONE) {
-				die(getLabel('yandex-api-error-json-parsing', 'emarket'));
-			}
-			$logMsg        = getLabel('yandex-api-payment-captured-success', 'emarket');
-			$captureResult = false;
-
-			try {
-
-				$notificationWaitForCapture = new YandexCheckout\Model\Notification\NotificationWaitingForCapture(
-					$notificationData
-				);
-				$captureResult = $this->capturePayment($payment = $notificationWaitForCapture->getObject());
-				$logMsg        = 'capture payment, id=' . $payment->getId() . ', captureResult=' .
-					var_export( $captureResult, true) . ', requestBody=' . $requestBody;
-
-			} catch (YandexCheckout\Common\Exceptions\ApiException $apiex) {
-				$logMsg = getLabel('yandex-api-not-correct-request', 'emarket') . $apiex->getMessage();
-			} catch (YandexCheckout\Common\Exceptions\InvalidRequestException $irex) {
-				$logMsg = getLabel('yandex-api-bad-request', 'emarket') . $irex->getMessage();
-			} catch (Exception $ex) {
-				$logMsg = getLabel('yandex-api-bad-payment-capture', 'emarket') . $ex->getMessage();
-			}
-
-			if (is_array($captureResult) && (isset($captureResult['error']) || isset($captureResult['cancel'])) ||
-				$captureResult === false) {
-				umihost_system_logger::getInstance()->addLog(__CLASS__, $logMsg,
-					umihost_system_logger::LEVEL_ERROR);
-			}
-
-			die($logMsg);
+			return parent::pushResponse($this->callbackApi3v());
 		}
 
 		$action = getRequest('action');
@@ -597,21 +709,7 @@ class custom_paysystem_ymoney_base extends custom_paysystem_base {
 		}
 
 		if ($this->isUseAPI3v) {
-			if (!$orderId) {
-				return '';
-			}
-
-			$order        = order::get($orderId);
-			$confirmation = false;
-
-			$mixedAPIResult = $this->processingPayment(NULL, self::PAYMENT_CREATE_ACTION, $order);
-			if ($mixedAPIResult instanceof YandexCheckout\Request\Payments\CreatePaymentResponse) {
-				$confirmation = $mixedAPIResult->getConfirmation();
-				return $confirmation instanceof YandexCheckout\Model\Confirmation\ConfirmationRedirect ?
-					$confirmation->getConfirmationUrl() : '';
-			}
-
-			return $mixedAPIResult;
+			return $this->getNewPaymentApi3v($orderId);
 		}
 
 		return 'https://money.yandex.ru/eshop.xml';
@@ -666,6 +764,15 @@ class custom_paysystem_ymoney_base extends custom_paysystem_base {
 					$this->getPaymentCustomParams($order)
 				)
 			) : array();
+	}
+
+	/**
+	 * Возвращает строковый идентификатор (код) типа подтверждения платежа
+	 *
+	 * @return string
+	 */
+	protected function getConfirmationType() {
+		return 'redirect';
 	}
 
 	/**

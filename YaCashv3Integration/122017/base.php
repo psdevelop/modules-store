@@ -114,7 +114,7 @@ abstract class custom_paysystem_base {
 
 	/**
 	 * Callback for payment system
-	 * @return string
+	 * @return mixed
 	 */
 	abstract function callback();
 
@@ -130,7 +130,7 @@ abstract class custom_paysystem_base {
 	/**
 	* Get URL for payment for order
 	* @param int $orderId ID of order for pay
-	* @return string 
+	* @return mixed
 	*/
 	abstract function getPaymentUrl($orderId);
 

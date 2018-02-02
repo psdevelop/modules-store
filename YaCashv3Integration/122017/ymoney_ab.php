@@ -30,4 +30,11 @@ class custom_paysystem_ymoney_ab extends custom_paysystem_ymoney_base {
 		return 'alfabank';
 	}
 
+	/**
+	 * @inheritdoc
+	 */
+	protected function getConfirmationType() {
+		return 'external';
+	}
+
 }
