@@ -1,0 +1,16 @@
+<?php
+/** @var array $info */
+/** @var UmiCms\Modules\Emarket\PaySystem\Sberbank\Order $order */
+?>
+
+[<?= $info['time'] ?>]: Запрос от Сбербанка — <?= $info['path'] ?>
+
+Данные заказа на стороне Сбербанка:
+
+Номер заказа в интернет-магазине: <?= $order->getShopNumber() ?>
+
+Оплачен: <?= $order->isPaid() ? 'Да' : 'Нет' ?>
+
+Описание ошибки: "<?= $order->getErrorDescription() ?>"
+
+Полный ответ от сбербанка: <?= $order->getRawInfo() ?>
