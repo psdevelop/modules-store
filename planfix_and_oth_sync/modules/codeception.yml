@@ -1,0 +1,13 @@
+namespace: app\modules\tests
+actor: Tester
+paths:
+    tests: tests
+    data: tests/_data
+    output: tests/_output
+    support: tests/_support
+settings:
+    bootstrap: _bootstrap.php
+    colors: true
+    memory_limit: 1024M
+params:
+    - ../.env

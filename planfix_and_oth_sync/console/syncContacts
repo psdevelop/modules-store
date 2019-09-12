@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ -n "$app_config" -a "$app_config" != "development" ];
+then
+    yii_app='/home/app/www/yii'
+else
+    yii_app='/home/app/planfix/www/yii'
+fi
+
+$yii_app contacts/contacts-sync/sync-to-planfix leads
+$yii_app contacts/contacts-sync/sync-to-planfix black

@@ -1,0 +1,10 @@
+POST http://planfix.maximsh.leads/tickets/leads/add-new-ticket?hash=24ccacc7befb8dac947c66ab615b8529
+Accept: application/json
+Content-Type: application/json
+
+{
+  "type": "leads",
+  "ticket_id": "94"
+}
+
+###

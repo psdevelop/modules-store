@@ -1,0 +1,159 @@
+<project name="setup" basedir="." default="checkout">
+    <!--Directories-->
+    <property name="projectDir" value="${phing.dir}/.." override="false"/>
+    <property name="srcDir" value="${projectDir}/www" override="false"/>
+    <property name="srcBackupDir" value="${projectDir}/www-backup" override="false"/>
+    <property name="tmpDir" value="${phing.dir}/install-tmp" override="false"/>
+    <property name="cronDeploymentFile" value="${projectDir}/www/deployment/cron/app"/>
+    <property name="cronWorkFile" value="${projectDir}/www/deployment/cron/app_work"/>
+    <property name="dbUser" value="${env.planfix_db_user_name}"/>
+    <property name="dbPwd" value="${env.planfix_db_password}"/>
+    <!--Branches-->
+    <property name="branch" value="${cabinetBranch}"/>
+    <!--Commands-->
+    <property name="yiic" value="${srcDir}/yii" override="false"/>
+
+    <property name="environment" value="${envConfig}"/>
+    <property name="dbRootCommand" value="mysql -u ${dbUser} --password=${dbPwd}"/>
+
+    <!--MAIN-->
+    <target name="debug">
+        <echo msg="DEBUG!!!" level="warning"/>
+    </target>
+
+    <target name="install" depends="prepare">
+        <phingcall target="getSrc"/>
+        <phingcall target="yiiChmod"/>
+        <phingcall target="consoleDirChmod"/>
+        <phingcall target="removeTmp"/>
+        <phingcall target="installDb"/>
+        <phingcall target="migrate"/>
+        <phingcall target="setCrontab"/>
+        <phingcall target="assetsChmod"/>
+        <echo>Install complete!!!</echo>
+    </target>
+
+    <target name="checkout" depends="prepare">
+        <phingcall target="getSrc"/>
+        <phingcall target="yiiChmod"/>
+        <phingcall target="consoleDirChmod"/>
+        <phingcall target="removeTmp"/>
+        <phingcall target="migrate"/>
+        <phingcall target="setCrontab"/>
+        <phingcall target="assetsChmod"/>
+        <echo>Checkout complete!!!</echo>
+    </target>
+
+    <!--PREPARE-->
+    <target name="prepare" depends="checkEnvironment">
+        <phingcall target="backupSrcDir"/>
+        <exec command="composer global require 'fxp/composer-asset-plugin:~1.3'" checkreturn="true" passthru="true"/>
+        <phingcall target="prepareDirs"/>
+        <echo>Prepare complete!!!</echo>
+    </target>
+
+    <target name="checkEnvironment">
+        <if>
+            <not>
+                <equals arg1="${env.app_config}" arg2="${environment}"/>
+            </not>
+            <then>
+                <echo level="warning">!!!Current script is not ready for ${environment} environment!!!</echo>
+
+                <fail/>
+            </then>
+        </if>
+    </target>
+
+    <target name="backupSrcDir">
+        <if>
+            <available property="fileExists" file="${srcDir}"/>
+            <then>
+                <exec command="sudo chown -R app:app ${srcDir}/web/assets;" checkreturn="true" passthru="true"/>
+                <delete dir="${srcBackupDir}" quiet="true"/>
+                <move file="${srcDir}" tofile="${srcBackupDir}"/>
+            </then>
+        </if>
+        <mkdir dir="${srcDir}"/>
+    </target>
+
+    <target name="prepareDirs">
+        <if>
+            <not>
+                <available property="fileExists" file="${tmpDir}"/>
+            </not>
+            <then>
+                <mkdir dir="${tmpDir}"/>
+            </then>
+        </if>
+        <if>
+            <not>
+                <available file="${projectDir}/runtime" type="dir"/>
+            </not>
+            <then>
+                <mkdir dir="${projectDir}/runtime"/>
+            </then>
+        </if>
+    </target>
+
+    <target name="yiiChmod">
+        <exec command="find ${srcDir}/ -name 'yii' -exec chmod 0755 {} \;" checkreturn="true" passthru="true"/>
+    </target>
+
+    <target name="assetsChmod">
+        <exec command="sudo chmod -R +x ${srcDir}/web/assets;" checkreturn="true" passthru="true"/>
+        <exec command="sudo chown -R www-data:www-data ${srcDir}/web/assets;" checkreturn="true" passthru="true"/>
+
+    </target>
+
+    <target name="consoleDirChmod">
+        <exec command="chmod -R +x ${srcDir}/console" checkreturn="true" passthru="true"/>
+    </target>
+
+    <!--/PREPARE-->
+
+    <!--SRC-->
+    <target name="getSrc">
+        <exec command="git clone git@gitlab.leads.local:root/planfix.git --single-branch -b ${branch} ${srcDir}"
+              checkreturn="true" passthru="true"/>
+        <delete dir="${srcDir}/.git" quiet="true" failonerror="false"/>
+        <move file="${srcDir}/auth.json" tofile="${user.home}/.composer/auth.json" overwrite="true"
+              preservemode="true" preservepermissions="true" preservelastmodified="true" haltonerror="true"/>
+        <exec command="composer --working-dir=${srcDir}/ update -n" checkreturn="true" passthru="true"/>
+        <echo>Src fetched!!!</echo>
+    </target>
+
+    <!--FINALLY-->
+    <target name="removeTmp">
+        <delete dir="${srcBackupDir}" quiet="true"/>
+        <delete dir="${tmpDir}" quiet="true"/>
+    </target>
+
+    <target name="installDb">
+        <exec command="${dbRootCommand} &lt; ${srcDir}/migrations/init.sql" checkreturn="true" passthru="true"/>
+        <echo>Db installed!!!</echo>
+    </target>
+
+    <target name="migrate">
+        <available property="fileExists" file="${srcDir}/yii"/>
+        <if>
+            <isset property="fileExists"/>
+            <then>
+                <exec command="${srcDir}/yii migrate-planfix --interactive=0" checkreturn="true" passthru="true"/>
+            </then>
+        </if>
+    </target>
+
+    <target name="setCrontab" description="Set Crontab">
+        <echo>Настройка крона</echo>
+        <copy file="${cronDeploymentFile}" tofile="${cronWorkFile}">
+            <filterchain>
+                <replaceregexp>
+                    <regexp pattern="\{basepath\}" replace="${srcDir}" ignoreCase="true"/>
+                </replaceregexp>
+            </filterchain>
+        </copy>
+        <exec command='crontab ${cronWorkFile}' passthru="true" checkreturn="false"/>
+    </target>
+
+</project>

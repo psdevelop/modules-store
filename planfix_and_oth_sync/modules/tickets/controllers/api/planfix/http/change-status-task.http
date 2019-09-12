@@ -1,0 +1,10 @@
+POST http://planfix.maximsh.leads/tickets/planfix/change-status?hash=24ccacc7befb8dac947c66ab615b8529
+Accept: application/json
+Content-Type: application/json
+
+{
+  "type": "leads",
+  "task_id": "1094282"
+}
+
+###

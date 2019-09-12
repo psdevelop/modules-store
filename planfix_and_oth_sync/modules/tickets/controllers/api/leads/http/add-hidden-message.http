@@ -1,0 +1,11 @@
+POST http://planfix.maximsh.leads/tickets/leads/add-hidden-message?hash=24ccacc7befb8dac947c66ab615b8529
+Accept: application/json
+Content-Type: application/json
+
+{
+  "type": "leads",
+  "messageText": "This is hidden message example for Planfix",
+  "ticketId": "1",
+}
+
+###
