@@ -1,0 +1,32 @@
+version: '2.1'
+
+services:
+  nginx:
+    image: tarantool/tarantool-nginx
+    networks:
+      - "KistochkiCRM"
+    ports:
+      - "80:80"
+    volumes:
+      - "./Nginx1.16.1/nginx.conf:/etc/nginx/nginx.conf"
+      - "./Nginx1.16.1/log:/var/log/nginx"
+      - "./html:/var/www/admin"
+    restart: always
+    links:
+      - tarantool1103
+  tarantool1103:
+    build: ./Tarantool1.10.3/
+    environment:
+      TARANTOOL_USER_NAME: "admin"
+      TARANTOOL_USER_PASSWORD: "086ylfc1jg7wpocb"
+    volumes:
+      - "./Tarantool1.10.3/base/:/var/lib/tarantool"
+      - "./Tarantool1.10.3/lua/:/opt/tarantool"
+    restart: always
+    networks:
+      - KistochkiCRM
+networks:
+  KistochkiCRM:
+    driver: bridge
+
+

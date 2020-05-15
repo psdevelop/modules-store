@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>Kistochki CRM | Вход</title>
+ <link rel="icon" type="image/png" href="favicon.png">
+ <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.8/css/AdminLTE.min.css">
+ <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="hold-transition login-page">
+ <div class="login-box">
+  <div class="login-logo">
+   <a href=""><b>Kistochki</b> CRM</a>
+  </div>
+  <div class="login-box-body">
+   <p class="login-box-msg">Вход для сотрудников Kistochki</p>
+   <div class="form-group has-feedback" logpass>
+    <input name="login" type="login" class="form-control" placeholder="Логин">
+    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+   </div>
+   <div class="form-group has-feedback" logpass>
+    <input name="password" type="password" class="form-control" placeholder="Пароль">
+    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+   </div>
+   <div class="hidden form-group has-error" logpasstxt>
+    <span class="help-block">Не верный логин или пароль!</span>
+   </div>
+   <div class="row">
+    <div class="col-xs-8">
+    </div>
+    <div class="col-xs-4">
+     <button id="login" type="submit" form="auth" class="btn btn-primary btn-block btn-flat">Войти</button>
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.3.1/sha.js"></script>
+ <script>
+  $(document).ready(function() {
+   $('#login').click(function() {
+    sha1 = new jsSHA("SHA3-256", "TEXT");
+    sha1.update(($("input[name='login']").val().toLowerCase() + $("input[name='password']").val()));
+    jurl = '/api/login?hash=' + sha1.getHash('HEX');
+    $.getJSON(jurl, {}, function(json) {
+     if (json.status == false) {
+      $("div[logpasstxt]").removeClass("hidden");
+      $("div[logpass]").addClass("has-error");
+     } else {
+      $.cookie('token', json.token, { expires: 3600, path: '/' });
+      $(location).attr("href", "/");
+     }
+    });
+   })
+  });
+  $("div[logpass]").keyup(function(event) {
+   if (event.keyCode == 13) {
+    $('#login').click();
+   }
+  });
+ </script>
+</body>
+
+</html>
