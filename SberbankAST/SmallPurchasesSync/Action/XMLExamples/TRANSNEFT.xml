@@ -1,0 +1,427 @@
+<Purchase>
+    <OrganizatorInfo>
+        <orgbuid>1114799</orgbuid>
+        <orgname/>
+        <orginn>3801079671</orginn>
+        <orgkpp>380501001</orgkpp>
+        <orgogrn>1063801003617</orgogrn>
+        <orgiko/>
+        <orgaddressjur>665734, г. Братск, ул. Олимпийская, д.14</orgaddressjur>
+        <orgaddressfact>665734, г. Братск, ул. Олимпийская, д.14</orgaddressfact>
+        <orgemail>3201-GlevskayaOA@vsmn.transneft.ru</orgemail>
+        <orgphone>8(3953)300-802,300-724</orgphone>
+        <orgcontactperson>О. А. Глевская</orgcontactperson>
+        <timezone>5</timezone>
+        <timezonecode>5</timezonecode>
+        <timezonename>GMT +8</timezonename>
+    </OrganizatorInfo>
+    <PurchaseInfo>
+        <IntegrationType>0</IntegrationType>
+        <PreferenceForSMP>0</PreferenceForSMP>
+        <PurchaseAmount>492199.72</PurchaseAmount>
+        <PurchaseCode>SBR043-2008200060</PurchaseCode>
+        <PurchaseId>634973</PurchaseId>
+        <PurchaseName>2100-K01-К-01-02605-2020 «Изделия трубные»</PurchaseName>
+        <PurchaseNotDishonest>1</PurchaseNotDishonest>
+        <PurchaseStatus>Прием заявок</PurchaseStatus>
+        <Subject>2100-K01-К-01-02605-2020 «Изделия трубные»</Subject>
+        <is448Procedure>0</is448Procedure>
+    </PurchaseInfo>
+    <PurchaseInfoDocumentation>
+        <PurchaseOOSDataProvisionDocumentation>20.08.2020</PurchaseOOSDataProvisionDocumentation>
+        <PurchaseOOSDataProvisionDocumentationPO>09.09.2020</PurchaseOOSDataProvisionDocumentationPO>
+        <PurchaseOOSOrderDocumentation>Документация о закупке в форме электронного документа находится в открытом
+            доступе с момента размещения извещения об осуществлении закупки в ЕИС
+        </PurchaseOOSOrderDocumentation>
+        <PurchaseOOSPlaceDocumentation>Документация о закупке в форме электронного документа находится в открытом
+            доступе с момента размещения извещения об осуществлении закупки в ЕИС
+        </PurchaseOOSPlaceDocumentation>
+    </PurchaseInfoDocumentation>
+    <PurchaseOrgBuTSId>1114799</PurchaseOrgBuTSId>
+    <Docs>
+        <AuctionDocs>
+            <file>
+                <signtype>hash</signtype>
+                <fileid>9b564aad-f8d0-491c-b0e1-e69a416382e9</fileid>
+                <filename>Извещение об осуществлении закупки.docx</filename>
+                <signinfo/>
+                <filecreatedt/>
+                <hash>B7377339A7059D2056A1DBD7B599E240570BEF31E5E0A2D9B0AD3E8AB3CAC874</hash>
+                <sign>
+                    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
+                </sign>
+                <hash2012/>
+                <filecomment/>
+            </file>
+            <file>
+                <signtype>hash</signtype>
+                <fileid>35f709c6-b74c-4c8a-a29e-af95997ec983</fileid>
+                <filename>Проект договора.zip</filename>
+                <signinfo/>
+                <filecreatedt/>
+                <hash>2D0BFE65ADC91569C685164907BA956F2828F60DE3EDABC6BC5BB04707B7BA8C</hash>
+                <sign>
+                    MIIYZgYJKoZIhvcNAQcCoIIYVzCCGFMCAQExDjAMBggqhQMHAQECAgUAMAsGCSqGSIb3DQEHAaCCE8Awgge8MIIHaaADAgECAgsAgBqlswAAAAAAMTAKBggqhQMHAQEDAjCCASQxHjAcBgkqhkiG9w0BCQEWD2RpdEBtaW5zdnlhei5ydTELMAkGA1UEBhMCUlUxGDAWBgNVBAgMDzc3INCc0L7RgdC60LLQsDEZMBcGA1UEBwwQ0LMuINCc0L7RgdC60LLQsDEuMCwGA1UECQwl0YPQu9C40YbQsCDQotCy0LXRgNGB0LrQsNGPLCDQtNC+0LwgNzEsMCoGA1UECgwj0JzQuNC90LrQvtC80YHQstGP0LfRjCDQoNC+0YHRgdC40LgxGDAWBgUqhQNkARINMTA0NzcwMjAyNjcwMTEaMBgGCCqFAwOBAwEBEgwwMDc3MTA0NzQzNzUxLDAqBgNVBAMMI9Cc0LjQvdC60L7QvNGB0LLRj9C30Ywg0KDQvtGB0YHQuNC4MB4XDTE4MDcyMDA4NTYwM1oXDTMzMDcyMDA4NTYwM1owggGHMSIwIAYJKoZIhvcNAQkBFhNjYV90ZW5zb3JAdGVuc29yLnJ1MRgwFgYFKoUDZAESDTEwMjc2MDA3ODc5OTQxGjAYBggqhQMDgQMBARIMMDA3NjA1MDE2MDMwMQswCQYDVQQGEwJSVTExMC8GA1UECAwoNzYg0K/RgNC+0YHQu9Cw0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjDEfMB0GA1UEBwwW0LMuINCv0YDQvtGB0LvQsNCy0LvRjDE0MDIGA1UECQwr0JzQvtGB0LrQvtCy0YHQutC40Lkg0L/RgNC+0YHQv9C10LrRgiDQtC4xMjEwMC4GA1UECwwn0KPQtNC+0YHRgtC+0LLQtdGA0Y/RjtGJ0LjQuSDRhtC10L3RgtGAMTAwLgYDVQQKDCfQntCe0J4gItCa0J7QnNCf0JDQndCY0K8gItCi0JXQndCX0J7QoCIxMDAuBgNVBAMMJ9Ce0J7QniAi0JrQntCc0J/QkNCd0JjQryAi0KLQldCd0JfQntCgIjBmMB8GCCqFAwcBAQEBMBMGByqFAwICIwEGCCqFAwcBAQICA0MABECY35JQkIjhgUOQrZwbv1aB73pFtgtY/0OfapoZu1cniIbhwYvWXOaXWXliMJcL+KdU1IIFXWo50xCwrOgjesneo4IEDDCCBAgwCwYDVR0PBAQDAgGGMB0GA1UdDgQWBBSylHv6YHeUR4OSS3S+CeTF5LlqyDAUBgkrBgEEAYI3FAIEBwwFU3ViQ0EwEgYDVR0TAQH/BAgwBgEB/wIBADAlBgNVHSAEHjAcMAYGBFUdIAAwCAYGKoUDZHEBMAgGBiqFA2RxAjA2BgUqhQNkbwQtDCsi0JrRgNC40L/RgtC+0J/RgNC+IENTUCIgKNCy0LXRgNGB0LjRjyA0LjApMBAGCSsGAQQBgjcVAQQDAgEAMIIBZQYDVR0jBIIBXDCCAViAFMJU8bRr1Ey34G02tCOQ8f7DPJsGoYIBLKSCASgwggEkMR4wHAYJKoZIhvcNAQkBFg9kaXRAbWluc3Z5YXoucnUxCzAJBgNVBAYTAlJVMRgwFgYDVQQIDA83NyDQnNC+0YHQutCy0LAxGTAXBgNVBAcMENCzLiDQnNC+0YHQutCy0LAxLjAsBgNVBAkMJdGD0LvQuNGG0LAg0KLQstC10YDRgdC60LDRjywg0LTQvtC8IDcxLDAqBgNVBAoMI9Cc0LjQvdC60L7QvNGB0LLRj9C30Ywg0KDQvtGB0YHQuNC4MRgwFgYFKoUDZAESDTEwNDc3MDIwMjY3MDExGjAYBggqhQMDgQMBARIMMDA3NzEwNDc0Mzc1MSwwKgYDVQQDDCPQnNC40L3QutC+0LzRgdCy0Y/Qt9GMINCg0L7RgdGB0LjQuIIQTm1HiybyfWV/do4CXOPTkzCBmAYDVR0fBIGQMIGNMC2gK6AphidodHRwOi8vcmVlc3RyLXBraS5ydS9jZHAvZ3VjX2dvc3QxMi5jcmwwLaAroCmGJ2h0dHA6Ly9jb21wYW55LnJ0LnJ1L2NkcC9ndWNfZ29zdDEyLmNybDAtoCugKYYnaHR0cDovL3Jvc3RlbGVjb20ucnUvY2RwL2d1Y19nb3N0MTIuY3JsMEMGCCsGAQUFBwEBBDcwNTAzBggrBgEFBQcwAoYnaHR0cDovL3JlZXN0ci1wa2kucnUvY2RwL2d1Y19nb3N0MTIuY3J0MIH1BgUqhQNkcASB6zCB6Aw00J/QkNCa0JwgwqvQmtGA0LjQv9GC0L7Qn9GA0L4gSFNNwrsg0LLQtdGA0YHQuNC4IDIuMAxD0J/QkNCaIMKr0JPQvtC70L7QstC90L7QuSDRg9C00L7RgdGC0L7QstC10YDRj9GO0YnQuNC5INGG0LXQvdGC0YDCuww10JfQsNC60LvRjtGH0LXQvdC40LUg4oSWIDE0OS8zLzIvMi8yMyDQvtGCIDAyLjAzLjIwMTgMNNCX0LDQutC70Y7Rh9C10L3QuNC1IOKEliAxNDkvNy82LzEwNSDQvtGCIDI3LjA2LjIwMTgwCgYIKoUDBwEBAwIDQQC3vJwQ+OCNzDw2Ji2otAtASytsycASvRMVttGChC0FZMK5QvGdicX2Pd6/B1ElJQp0MDplnKY6jgjvZ0//BaJrMIIL/DCCC6mgAwIBAgIQIcsRAGKqk7pMZ+vTEYFrPjAKBggqhQMHAQEDAjCCAYcxIjAgBgkqhkiG9w0BCQEWE2NhX3RlbnNvckB0ZW5zb3IucnUxGDAWBgUqhQNkARINMTAyNzYwMDc4Nzk5NDEaMBgGCCqFAwOBAwEBEgwwMDc2MDUwMTYwMzAxCzAJBgNVBAYTAlJVMTEwLwYDVQQIDCg3NiDQr9GA0L7RgdC70LDQstGB0LrQsNGPINC+0LHQu9Cw0YHRgtGMMR8wHQYDVQQHDBbQsy4g0K/RgNC+0YHQu9Cw0LLQu9GMMTQwMgYDVQQJDCvQnNC+0YHQutC+0LLRgdC60LjQuSDQv9GA0L7RgdC/0LXQutGCINC0LjEyMTAwLgYDVQQLDCfQo9C00L7RgdGC0L7QstC10YDRj9GO0YnQuNC5INGG0LXQvdGC0YAxMDAuBgNVBAoMJ9Ce0J7QniAi0JrQntCc0J/QkNCd0JjQryAi0KLQldCd0JfQntCgIjEwMC4GA1UEAwwn0J7QntCeICLQmtCe0JzQn9CQ0J3QmNCvICLQotCV0J3Ql9Ce0KAiMB4XDTE5MDYwNDAwNTQ0OFoXDTIwMDkwNDAwNTQ0OFowggI8MSgwJgYDVQQJDB/Rg9C7LtCe0LvQuNC80L/QuNC50YHQutCw0Y8sIDE0MS0wKwYDVQQIDCQzOCDQmNGA0LrRg9GC0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwxLDAqBgNVBAcMI9CzLtCR0YDQsNGC0YHQuiwg0K3QvdC10YDQs9C10YLQuNC6MQswCQYDVQQGEwJSVTEuMCwGA1UEKgwl0J7Qu9C10YHRjyDQkNC70LXQutGB0LDQvdC00YDQvtCy0L3QsDEZMBcGA1UEBAwQ0JPQu9C10LLRgdC60LDRjzE0MDIGA1UEAwwr0J7QntCeItCi0KDQkNCd0KHQndCV0KTQotCsIC0g0JLQntCh0KLQntCaIjEdMBsGA1UEDAwU0KHQv9C10YbQuNCw0LvQuNGB0YIxETAPBgNVBAsMCNCe0J/Qn9CiMTQwMgYDVQQKDCvQntCe0J4i0KLQoNCQ0J3QodCd0JXQpNCi0KwgLSDQktCe0KHQotCe0JoiMT4wPAYJKoZIhvcNAQkCDC9JTk49MzgwMTA3OTY3MS9LUFA9OTk3MjUwMDAxL09HUk49MTA2MzgwMTAwMzYxNzEvMC0GCSqGSIb3DQEJARYgMzIwMS1zZW1lbm92bmxAdnNtbi50cmFuc25lZnQucnUxGjAYBggqhQMDgQMBARIMMDAzODAxMDc5NjcxMRYwFAYFKoUDZAMSCzA3NDYzMDEwNjQzMRgwFgYFKoUDZAESDTEwNjM4MDEwMDM2MTcwZjAfBggqhQMHAQEBATATBgcqhQMCAiQABggqhQMHAQECAgNDAARArcslpzSToGSPhbkwdHi5p8j+1mpekgPHJnWEhsUGQE5XbKQ1gyuxENFk07QrzbMg9eZzj+9BTuD9leA50+pb3qOCBy8wggcrMA4GA1UdDwEB/wQEAwIE8DCBkQYDVR0lBIGJMIGGBgcqhQMCAiIZBgcqhQMCAiIaBgcqhQMCAiIGBggqhQMCQAEBAQYIKoUDA4EdAg0GByqFAwYlAQEGBiqFAwYoAQYIKoUDBikBAQEGCCqFAwYqBQUFBggqhQMGLAEBAQYIKoUDBi0BAQEGCCqFAwcCFQECBggrBgEFBQcDAgYIKwYBBQUHAwQwHQYDVR0gBBYwFDAIBgYqhQNkcQEwCAYGKoUDZHECMCEGBSqFA2RvBBgMFtCa0YDQuNC/0YLQvtCf0YDQviBDU1AwggHcBggrBgEFBQcBAQSCAc4wggHKMEkGCCsGAQUFBzABhj1odHRwOi8vdGF4NC50ZW5zb3IucnUvb2NzcC10ZW5zb3JjYS0yMDE4X2NwX2dvc3QyMDEyL29jc3Auc3JmMGQGCCsGAQUFBzAChlhodHRwOi8vdGF4NC50ZW5zb3IucnUvdGVuc29yY2EtMjAxOF9jcF9nb3N0MjAxMi9jZXJ0ZW5yb2xsL3RlbnNvcmNhLTIwMThfY3BfZ29zdDIwMTIuY3J0MD0GCCsGAQUFBzAChjFodHRwOi8vdGVuc29yLnJ1L2NhL3RlbnNvcmNhLTIwMThfY3BfZ29zdDIwMTIuY3J0MEYGCCsGAQUFBzAChjpodHRwOi8vY3JsLnRlbnNvci5ydS90YXg0L2NhL3RlbnNvcmNhLTIwMThfY3BfZ29zdDIwMTIuY3J0MEcGCCsGAQUFBzAChjtodHRwOi8vY3JsMi50ZW5zb3IucnUvdGF4NC9jYS90ZW5zb3JjYS0yMDE4X2NwX2dvc3QyMDEyLmNydDBHBggrBgEFBQcwAoY7aHR0cDovL2NybDMudGVuc29yLnJ1L3RheDQvY2EvdGVuc29yY2EtMjAxOF9jcF9nb3N0MjAxMi5jcnQwKwYDVR0QBCQwIoAPMjAxOTA2MDQwMDU0NDdagQ8yMDIwMDkwNDAwNTQ0N1owggEzBgUqhQNkcASCASgwggEkDCsi0JrRgNC40L/RgtC+0J/RgNC+IENTUCIgKNCy0LXRgNGB0LjRjyA0LjApDFMi0KPQtNC+0YHRgtC+0LLQtdGA0Y/RjtGJ0LjQuSDRhtC10L3RgtGAICLQmtGA0LjQv9GC0L7Qn9GA0L4g0KPQpiIg0LLQtdGA0YHQuNC4IDIuMAxP0KHQtdGA0YLQuNGE0LjQutCw0YIg0YHQvtC+0YLQstC10YLRgdGC0LLQuNGPIOKEliDQodCkLzEyNC0zMzgwINC+0YIgMTEuMDUuMjAxOAxP0KHQtdGA0YLQuNGE0LjQutCw0YIg0YHQvtC+0YLQstC10YLRgdGC0LLQuNGPIOKEliDQodCkLzEyOC0zNTkyINC+0YIgMTcuMTAuMjAxODCCAXoGA1UdHwSCAXEwggFtMF6gXKBahlhodHRwOi8vdGF4NC50ZW5zb3IucnUvdGVuc29yY2EtMjAxOF9jcF9nb3N0MjAxMi9jZXJ0ZW5yb2xsL3RlbnNvcmNhLTIwMThfY3BfZ29zdDIwMTIuY3JsMDegNaAzhjFodHRwOi8vdGVuc29yLnJ1L2NhL3RlbnNvcmNhLTIwMThfY3BfZ29zdDIwMTIuY3JsMESgQqBAhj5odHRwOi8vY3JsLnRlbnNvci5ydS90YXg0L2NhL2NybC90ZW5zb3JjYS0yMDE4X2NwX2dvc3QyMDEyLmNybDBFoEOgQYY/aHR0cDovL2NybDIudGVuc29yLnJ1L3RheDQvY2EvY3JsL3RlbnNvcmNhLTIwMThfY3BfZ29zdDIwMTIuY3JsMEWgQ6BBhj9odHRwOi8vY3JsMy50ZW5zb3IucnUvdGF4NC9jYS9jcmwvdGVuc29yY2EtMjAxOF9jcF9nb3N0MjAxMi5jcmwwggFgBgNVHSMEggFXMIIBU4AUspR7+mB3lEeDkkt0vgnkxeS5asihggEspIIBKDCCASQxHjAcBgkqhkiG9w0BCQEWD2RpdEBtaW5zdnlhei5ydTELMAkGA1UEBhMCUlUxGDAWBgNVBAgMDzc3INCc0L7RgdC60LLQsDEZMBcGA1UEBwwQ0LMuINCc0L7RgdC60LLQsDEuMCwGA1UECQwl0YPQu9C40YbQsCDQotCy0LXRgNGB0LrQsNGPLCDQtNC+0LwgNzEsMCoGA1UECgwj0JzQuNC90LrQvtC80YHQstGP0LfRjCDQoNC+0YHRgdC40LgxGDAWBgUqhQNkARINMTA0NzcwMjAyNjcwMTEaMBgGCCqFAwOBAwEBEgwwMDc3MTA0NzQzNzUxLDAqBgNVBAMMI9Cc0LjQvdC60L7QvNGB0LLRj9C30Ywg0KDQvtGB0YHQuNC4ggsAgBqlswAAAAAAMTAdBgNVHQ4EFgQUkG3e3n8g/3mr9TTEz9xMuVY5O70wCgYIKoUDBwEBAwIDQQAw0CByn9R5UzOwUVZJodLyl3WeoWpiOPGorlhCzbiyk0euHndBrfsguUoWBJhLZscRwGFqM2fEy56TYBQap3Z/MYIEazCCBGcCAQEwggGdMIIBhzEiMCAGCSqGSIb3DQEJARYTY2FfdGVuc29yQHRlbnNvci5ydTEYMBYGBSqFA2QBEg0xMDI3NjAwNzg3OTk0MRowGAYIKoUDA4EDAQESDDAwNzYwNTAxNjAzMDELMAkGA1UEBhMCUlUxMTAvBgNVBAgMKDc2INCv0YDQvtGB0LvQsNCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwxHzAdBgNVBAcMFtCzLiDQr9GA0L7RgdC70LDQstC70YwxNDAyBgNVBAkMK9Cc0L7RgdC60L7QstGB0LrQuNC5INC/0YDQvtGB0L/QtdC60YIg0LQuMTIxMDAuBgNVBAsMJ9Cj0LTQvtGB0YLQvtCy0LXRgNGP0Y7RidC40Lkg0YbQtdC90YLRgDEwMC4GA1UECgwn0J7QntCeICLQmtCe0JzQn9CQ0J3QmNCvICLQotCV0J3Ql9Ce0KAiMTAwLgYDVQQDDCfQntCe0J4gItCa0J7QnNCf0JDQndCY0K8gItCi0JXQndCX0J7QoCICECHLEQBiqpO6TGfr0xGBaz4wDAYIKoUDBwEBAgIFAKCCAmEwGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjAwODIwMTkwMDQ5WjAvBgkqhkiG9w0BCQQxIgQgGhF835+RJWd+m/iIrzXPWyxuD9/bFFZfqQlU2pblLiEwggH0BgsqhkiG9w0BCRACLzGCAeMwggHfMIIB2zCCAdcwCgYIKoUDBwEBAgIEIMgma+42/ek3GM1LMMlKx12xmu/oSSizdbNC0GERyUFsMIIBpTCCAY+kggGLMIIBhzEiMCAGCSqGSIb3DQEJARYTY2FfdGVuc29yQHRlbnNvci5ydTEYMBYGBSqFA2QBEg0xMDI3NjAwNzg3OTk0MRowGAYIKoUDA4EDAQESDDAwNzYwNTAxNjAzMDELMAkGA1UEBhMCUlUxMTAvBgNVBAgMKDc2INCv0YDQvtGB0LvQsNCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwxHzAdBgNVBAcMFtCzLiDQr9GA0L7RgdC70LDQstC70YwxNDAyBgNVBAkMK9Cc0L7RgdC60L7QstGB0LrQuNC5INC/0YDQvtGB0L/QtdC60YIg0LQuMTIxMDAuBgNVBAsMJ9Cj0LTQvtGB0YLQvtCy0LXRgNGP0Y7RidC40Lkg0YbQtdC90YLRgDEwMC4GA1UECgwn0J7QntCeICLQmtCe0JzQn9CQ0J3QmNCvICLQotCV0J3Ql9Ce0KAiMTAwLgYDVQQDDCfQntCe0J4gItCa0J7QnNCf0JDQndCY0K8gItCi0JXQndCX0J7QoCICECHLEQBiqpO6TGfr0xGBaz4wDAYIKoUDBwEBAQEFAARADeMnnRLLdfTcwciFdUi4ISVpkAyzG4ZN5DQlyOKxJ1am+5jxN66xIpI03HZLeNKyJ/VPCqQPPwj7wwSrXMij/A==
+                </sign>
+                <hash2012/>
+                <filecomment/>
+            </file>
+            <file>
+                <signtype>hash</signtype>
+                <fileid>5975f232-ca69-451f-bc75-6f1d862adbb7</fileid>
+                <filename>Документация о закупке.zip</filename>
+                <signinfo/>
+                <filecreatedt/>
+                <hash>EA091D8CFAEE2FD00FF8CCD5A0929476F626C8DA5E5BCD17B30EBEA606B5FFCF</hash>
+                <sign>
+                    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
+                </sign>
+                <hash2012/>
+                <filecomment/>
+            </file>
+        </AuctionDocs>
+    </Docs>
+    <QualifyingCompetitionInfo>
+        <QualifyingChoice>0</QualifyingChoice>
+        <QualifyingDocs>
+            <file>
+                <signtype/>
+                <fileid/>
+                <filename/>
+                <signinfo/>
+                <filecreatedt/>
+                <hash/>
+                <sign/>
+                <hash2012/>
+                <filecomment/>
+            </file>
+        </QualifyingDocs>
+    </QualifyingCompetitionInfo>
+    <TenderInfo>
+        <AuctionStartDate>21.09.2020 11:00</AuctionStartDate>
+        <OpenEnvelopeDate>09.09.2020 06:00</OpenEnvelopeDate>
+        <PurchaseAuctionResultDate>29.09.2020 11:00</PurchaseAuctionResultDate>
+        <RequestReviewDate>17.09.2020 11:00</RequestReviewDate>
+        <RequestStartDate>20.08.2020 14:13</RequestStartDate>
+        <RequestStopDate>09.09.2020 06:00</RequestStopDate>
+    </TenderInfo>
+    <PurchaseTypeInfo>
+        <PurchaseTypeName>Аукцион в электронной форме</PurchaseTypeName>
+    </PurchaseTypeInfo>
+    <Bids>
+        <Bid>
+            <BidInfo>
+                <AuctionStepMaxPercent>15.00</AuctionStepMaxPercent>
+                <AuctionStepMinPercent>0.51</AuctionStepMinPercent>
+                <AuctionStepType>abs</AuctionStepType>
+                <AuctionStepTypeMax>73829.96</AuctionStepTypeMax>
+                <AuctionStepTypeMin>2500.00</AuctionStepTypeMin>
+                <BidAdditionalInfo>
+                    <BidTradeType>1</BidTradeType>
+                    <BidTradeTypeName>По лоту в целом</BidTradeTypeName>
+                </BidAdditionalInfo>
+                <BidAmount>492199.72</BidAmount>
+                <BidCoverAmount>0.00</BidCoverAmount>
+                <BidCurrency>267655</BidCurrency>
+                <BidCurrencyName>Российский рубль</BidCurrencyName>
+                <BidDeliveryPeriod>30.11.2020</BidDeliveryPeriod>
+                <BidId>1141825</BidId>
+                <BidName>2100-K01-К-01-02605-2020 «Изделия трубные»</BidName>
+                <BidNo>100043139</BidNo>
+                <BidPlace>В соответствии с документацией о закупке</BidPlace>
+                <BidPrice>492199.72</BidPrice>
+                <BidPriceNDS>1</BidPriceNDS>
+                <BidStatusId>Прием заявок</BidStatusId>
+                <Deposit>4922.00</Deposit>
+                <BidCriterias>
+                    <BidCriteria>
+                        <BidCriteriaName>сведения о финансовом состоянии за последние 3 (три) года – по форме 11
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>копия сертификата системы менеджмента качества стандарта ISO (при наличии)
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>сведения об имеющемся персонале – по форме 8</BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>Сведения об опыте осуществления поставок товаров, соответствующих товарам,
+                            указанным в документации о закупке, по договорам с ПАО «Транснефть» и ОСТ – по Форме 7.1
+                            (представляется в электронном виде в формате разработки MS Excel с приложением (при наличии)
+                            подтверждающих документов)
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>Сведения об опыте осуществления поставок товаров, соответствующих товарам,
+                            указанным в документации о закупке, с организациями, не взаимозависимыми с ПАО «Транснефть»
+                            и ОСТ – по Форме 7 (представляется в электронном виде в формате разработки MS Excel с
+                            приложением (при наличии) подтверждающих документов)
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>план привлечения субподрядчиков (соисполнителей) из числа субъектов малого и
+                            среднего предпринимательства по форме 13 (данная форма предоставляется участником закупки
+                            только в случае, если извещением об осуществлении закупки установлено требование к участнику
+                            закупки о привлечении к исполнению договора субподрядчиков (соисполнителей) из числа
+                            субъектов малого и среднего предпринимательства).
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>сведения из единого реестра субъектов малого и среднего предпринимательства или
+                            декларация о соответствии участника закупки критериям отнесения к субъектам малого и
+                            среднего предпринимательства по форме 12 в случае отсутствия сведений об участнике закупки,
+                            который является вновь зарегистрированным индивидуальным предпринимателем или вновь
+                            созданным юридическим лицом (данная форма предоставляется только в случае, когда участник
+                            относится к субъектам малого или среднего предпринимательства)
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>для юридического лица, индивидуального предпринимателя – оборотно-сальдовая
+                            ведомость в разрезе субсчетов, входящих в состав кредиторской задолженности на конец
+                            последнего завершенного отчетного периода (года) или иная расшифровка кредиторской
+                            задолженности по видам задолженности на конец последнего завершенного отчетного периода
+                            (года) (счета 68 и 69)
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>для юридического лица, индивидуального предпринимателя (кроме юридических лиц,
+                            применяющих специальных налоговый режим, и нерезидентов) – копии бухгалтерского баланса
+                            (форма N 1 по ОКУД 0710001) и отчета о финансовых результатах (форма №2 по ОКУД 0710001) за
+                            3 (три) последних календарных года, с подтверждением налоговой инспекции о получении или с
+                            подтверждением отправки в налоговую инспекцию (Для участника закупки, ведущего деятельность
+                            менее 3 (трех) календарных лет, бухгалтерский баланс и отчет о финансовых результатах
+                            представляется за период с даты государственной регистрации)
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>согласие субъекта персональных данных на обработку его персональных данных – по
+                            форме 9 (данная форма заполняется и подписывается каждым физическим лицом, в случае указания
+                            персональных данных такого лица в составе заявки на участие в закупке, за исключением
+                            информации о лице, находящейся в общедоступных источниках персональных данных (в том числе
+                            справочниках, адресных книгах и т.п.).
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>анкета участника закупки – по форме 6</BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>гарантийное письмо - по форме 4.2 (предоставляется победителем закупки, в
+                            случае поставки товаров, по которым в столбце «Продукция включена в Перечень ОВП» Формы 2
+                            «Расчет цены договора (цены лота)» указано слово «Да».)
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>подтверждение возможности исполнения договора – по форме 4.1</BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>подтверждение согласия с условиями договора и порядком его заключения – по
+                            форме 4
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>подтверждение адреса для направления письма об отказе от своих прав по
+                            банковской гарантии – по форме 3.3
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>подтверждение реквизитов возврата обеспечения – по форме 3.2</BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>подтверждение согласия на невозврат обеспечения заявки на участие в закупке –
+                            по форме 3.1
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>расчет попозиционных цен единичных расценок – по форме 2.2 (данная форма
+                            предоставляется заполненной только при закупке товаров, работ, услуг в единичных расценках,
+                            если цена договора (цена лота) не подлежит изменению в ходе закупки)
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>расчет цены договора (цены лота) – по форме 2</BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>соглашение между участниками коллективной заявки и документы в соответствии с
+                            п.10.5 Инструкции (при участии на стороне одного участника закупки нескольких лиц)
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>заявка на участие в закупке - по форме 1</BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>Заверенная банком копия доверенности на право подписи банковской гарантии (если
+                            банковская гарантия подписана лицом/лицами, не имеющим(ми) права в соответствии с
+                            учредительными документами банка действовать без доверенности)
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- банковская гарантия (по форме 3) или платежное поручение, подтверждающее
+                            перечисление средств в качестве обеспечения заявки на участие в закупке
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- копия действующей редакции устава организации со всеми изменениями, сотметкой
+                            ИФНС о регистрации
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- заверенная участником копия протокола (решения) и приказа о назначении
+                            единоличного исполнительного органа либо протокола (решения) опередаче функций единоличного
+                            исполнительного органа управляющему
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- для обществ, созданных по решениям органов власти – копия документа о
+                            создании (постановление, распоряжение, указ и проч.)
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- информация о применении (копия информационного письма и/или уведомления ФНС
+                            России)/неприменении (письмо за подписью участника закупки) упрощенной системы
+                            налогообложения
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- копия свидетельства о государственной регистрации юридического лица (для
+                            юридических лиц (индивидуальных предпринимателей), зарегистрированных (созданных) до
+                            01.01.2017))
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- копия свидетельства о постановке юридического лица на налоговый учет
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>-выписка из ЕГРЮЛ, выданная не ранее чем за 30 (тридцать) дней до даты подачи
+                            заявки на участие в закупке
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- копия приказа о назначении главного бухгалтера (копия доверенности или
+                            договора на аутсорсинг)
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- решение (протокол, выписка из протокола) об одобрении органами общества
+                            заключения сделки/взаимосвязанных сделок по цене, указанной в заявке на участие в закупке (в
+                            форме 1, форме 2), либо письмо за подписью участника закупки о том, что данная сделка не
+                            требует одобрения
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- для индивидуального предпринимателя - копия документа о государственной
+                            регистрации физического лица в качестве индивидуального предпринимателя
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>– для индивидуального предпринимателя – копия свидетельства о постановке на
+                            налоговый учет
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- для индивидуального предпринимателя - информация о применении (копия
+                            информационного письма и/или уведомления ФНС России)/неприменении (письмо за подписью
+                            участника закупки) упрощенной системы налогообложения
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- копия паспорта (все страницы)</BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- копия страхового свидетельства государственного пенсионного страхования
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- для индивидуального предпринимателя в случае ведения им деятельности без
+                            печати - письмо, подтверждающее ведение им деятельности без печати
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- для индивидуального предпринимателя - копия свидетельства о постановке на
+                            учет в пенсионном фонде как работодателя
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>– для индивидуального предпринимателя – копии актов проведения проверок
+                            проверяющими инстанциями (при наличии);
+                        </BidCriteriaName>
+                    </BidCriteria>
+                    <BidCriteria>
+                        <BidCriteriaName>- для индивидуального предпринимателя выписка из ЕГРИП, выданная не ранее чем
+                            за тридцать дней до даты подачи заявки на участие в закупке
+                        </BidCriteriaName>
+                    </BidCriteria>
+                </BidCriterias>
+                <BidCustomers>
+                    <BidCustomer>
+                        <BidCustomerBuTSId>1114799</BidCustomerBuTSId>
+                        <BidCustomerId>649185</BidCustomerId>
+                        <BidCustomerINN>3801079671</BidCustomerINN>
+                        <BidCustomerKPP>380501001</BidCustomerKPP>
+                        <BidCustomerNickName>Общество с ограниченной ответственностью "Транснефть - Восток"
+                        </BidCustomerNickName>
+                        <BidCustomerOGRN>1063801003617</BidCustomerOGRN>
+                    </BidCustomer>
+                </BidCustomers>
+                <Positions>
+                    <Position>
+                        <PosAuctionStepMax>9999999999999999.00</PosAuctionStepMax>
+                        <PosAuctionStepMin>0.00</PosAuctionStepMin>
+                        <PositionDopInfo>Объем поставляемых товаров, выполняемых работ, оказываемых услуг в соответствии
+                            с документацией о закупке.
+                        </PositionDopInfo>
+                        <PositionId>1553639</PositionId>
+                        <PositionName>Фитинги для труб стальные, кроме литых</PositionName>
+                        <PositionNo>1</PositionNo>
+                        <PositionOKEI>Штука</PositionOKEI>
+                        <PositionOKPD2>24.20.40.000</PositionOKPD2>
+                        <PositionOKVED2>24.20.3</PositionOKVED2>
+                        <PositionQuantity>306.00</PositionQuantity>
+                    </Position>
+                    <Position>
+                        <PosAuctionStepMax>9999999999999999.00</PosAuctionStepMax>
+                        <PosAuctionStepMin>0.00</PosAuctionStepMin>
+                        <PositionDopInfo>Объем поставляемых товаров, выполняемых работ, оказываемых услуг в соответствии
+                            с документацией о закупке.
+                        </PositionDopInfo>
+                        <PositionId>1553640</PositionId>
+                        <PositionName>Изделия прочие из недрагоценных металлов, не включенные в другие группировки
+                        </PositionName>
+                        <PositionNo>2</PositionNo>
+                        <PositionOKEI>Штука</PositionOKEI>
+                        <PositionOKPD2>25.99.29.190</PositionOKPD2>
+                        <PositionOKVED2>25.11</PositionOKVED2>
+                        <PositionQuantity>70.00</PositionQuantity>
+                    </Position>
+                </Positions>
+            </BidInfo>
+        </Bid>
+    </Bids>
+    <Events>
+        <Event>
+            <HistoryComment>Создание извещения</HistoryComment>
+            <HistoryDocId>113367034</HistoryDocId>
+            <HistoryDt>20.08.2020 14:00</HistoryDt>
+            <PurchaseChangeLogId>9744964</PurchaseChangeLogId>
+        </Event>
+        <Event>
+            <HistoryComment>Начало периода приема заявок</HistoryComment>
+            <HistoryDocId>113368620</HistoryDocId>
+            <HistoryDt>20.08.2020 14:13</HistoryDt>
+            <PurchaseChangeLogId>9745024</PurchaseChangeLogId>
+        </Event>
+    </Events>
+    <HistoryInfo>
+        <History>
+            <HistoryComment>Создание извещения</HistoryComment>
+            <HistoryDocId>113367034</HistoryDocId>
+            <HistoryDt>20.08.2020 14:00</HistoryDt>
+        </History>
+        <History>
+            <HistoryComment>Начало периода приема заявок</HistoryComment>
+            <HistoryDocId>113368620</HistoryDocId>
+            <HistoryDt>20.08.2020 14:13</HistoryDt>
+        </History>
+    </HistoryInfo>
+</Purchase>

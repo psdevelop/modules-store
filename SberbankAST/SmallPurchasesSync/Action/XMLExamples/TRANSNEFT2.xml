@@ -1,0 +1,272 @@
+<Purchase folderName="SBR043-200111497601156">
+    <DocsDiv>
+        <Docs>
+            <file>
+                <signtype>hash</signtype>
+                <fileid>5dfe4853-e410-4bec-98fd-0286656e3fbe</fileid>
+                <filename>Документация о закупке.rar</filename>
+                <signinfo/>
+                <filecreatedt>21.08.2020</filecreatedt>
+                <hash>AB0FE9807508601CB3EAA2994E41D66E1599D2BB87D215550C7AE05FE52BA705</hash>
+                <sign>
+                    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
+                </sign>
+                <hash2012>AA415359621EDD03A3DCA44B534AE0AF3F558CAAE76BC73A4AC53B2EA5E95E9A</hash2012>
+                <filecomment/>
+            </file>
+            <file>
+                <signtype>hash</signtype>
+                <fileid>6b140a4c-bed4-4f7e-aa5e-c2a84c239814</fileid>
+                <filename>Извещение об осуществлении закупки.doc</filename>
+                <signinfo/>
+                <filecreatedt>21.08.2020</filecreatedt>
+                <hash>2DF6EF7FBE182B3762132CA560E883C7682CF65099F4BE806951EA128A58A632</hash>
+                <sign>
+                    MIIWywYJKoZIhvcNAQcCoIIWvDCCFrgCAQExDjAMBggqhQMHAQECAgUAMAsGCSqGSIb3DQEHAaCCEZEwgggiMIIHz6ADAgECAgpqpwk2AAAAAAJSMAoGCCqFAwcBAQMCMIIBJDEeMBwGCSqGSIb3DQEJARYPZGl0QG1pbnN2eWF6LnJ1MQswCQYDVQQGEwJSVTEYMBYGA1UECAwPNzcg0JzQvtGB0LrQstCwMRkwFwYDVQQHDBDQsy4g0JzQvtGB0LrQstCwMS4wLAYDVQQJDCXRg9C70LjRhtCwINCi0LLQtdGA0YHQutCw0Y8sINC00L7QvCA3MSwwKgYDVQQKDCPQnNC40L3QutC+0LzRgdCy0Y/Qt9GMINCg0L7RgdGB0LjQuDEYMBYGBSqFA2QBEg0xMDQ3NzAyMDI2NzAxMRowGAYIKoUDA4EDAQESDDAwNzcxMDQ3NDM3NTEsMCoGA1UEAwwj0JzQuNC90LrQvtC80YHQstGP0LfRjCDQoNC+0YHRgdC40LgwHhcNMTkwNzAzMTIyMjE1WhcNMzQwNzAzMTIyMjE1WjCCAdAxGDAWBgUqhQNkARINMTA5NzIzMjAwMTcwMTEaMBgGCCqFAwOBAwEBEgwwMDcyMDQxNDEzMjMxGTAXBgkqhkiG9w0BCQEWCnVjQHJrNzIucnUxCzAJBgNVBAYTAlJVMS0wKwYDVQQIDCQ3MiDQotGO0LzQtdC90YHQutCw0Y8g0L7QsdC70LDRgdGC0YwxFTATBgNVBAcMDNCi0Y7QvNC10L3RjDE2MDQGA1UECQwt0YPQuy4g0KHQsNC70YLRi9C60L7QstCwLdCp0LXQtNGA0LjQvdCwLCA1My8zMXgwdgYDVQQKDG/QntCR0KnQldCh0KLQktCeINChINCe0JPQoNCQ0J3QmNCn0JXQndCd0J7QmSDQntCi0JLQldCi0KHQotCS0JXQndCd0J7QodCi0KzQriAi0KDQo9Ch0KHQmtCQ0K8g0JrQntCc0J/QkNCd0JjQryIxeDB2BgNVBAMMb9Ce0JHQqdCV0KHQotCS0J4g0KEg0J7Qk9Cg0JDQndCY0KfQldCd0J3QntCZINCe0KLQktCV0KLQodCi0JLQldCd0J3QntCh0KLQrNCuICLQoNCj0KHQodCa0JDQryDQmtCe0JzQn9CQ0J3QmNCvIjBmMB8GCCqFAwcBAQEBMBMGByqFAwICIwEGCCqFAwcBAQICA0MABEAuKD11vB8JnVEeOgXj0kURJWvRznSr1NzUB+g65V9gMe5TiJeaNb2Tr5vg64xzk8nRArj9k6N6Cw0sypFhSffco4IEKjCCBCYwCwYDVR0PBAQDAgGGMB0GA1UdDgQWBBRwzjDqOAke25LcEE7XOQkX7LIiETAUBgkrBgEEAYI3FAIEBwwFU3ViQ0EwEgYDVR0TAQH/BAgwBgEB/wIBADAlBgNVHSAEHjAcMAgGBiqFA2RxATAIBgYqhQNkcQIwBgYEVR0gADBSBgUqhQNkbwRJDEci0JrRgNC40L/RgtC+0J/RgNC+IENTUCIg0LLQtdGA0YHQuNGPIDQuMCAo0LjRgdC/0L7Qu9C90LXQvdC40LUgMi1CYXNlKTASBgkrBgEEAYI3FQEEBQIDAQABMIIBZQYDVR0jBIIBXDCCAViAFMJU8bRr1Ey34G02tCOQ8f7DPJsGoYIBLKSCASgwggEkMR4wHAYJKoZIhvcNAQkBFg9kaXRAbWluc3Z5YXoucnUxCzAJBgNVBAYTAlJVMRgwFgYDVQQIDA83NyDQnNC+0YHQutCy0LAxGTAXBgNVBAcMENCzLiDQnNC+0YHQutCy0LAxLjAsBgNVBAkMJdGD0LvQuNGG0LAg0KLQstC10YDRgdC60LDRjywg0LTQvtC8IDcxLDAqBgNVBAoMI9Cc0LjQvdC60L7QvNGB0LLRj9C30Ywg0KDQvtGB0YHQuNC4MRgwFgYFKoUDZAESDTEwNDc3MDIwMjY3MDExGjAYBggqhQMDgQMBARIMMDA3NzEwNDc0Mzc1MSwwKgYDVQQDDCPQnNC40L3QutC+0LzRgdCy0Y/Qt9GMINCg0L7RgdGB0LjQuIIQTm1HiybyfWV/do4CXOPTkzCBmAYDVR0fBIGQMIGNMC2gK6AphidodHRwOi8vcmVlc3RyLXBraS5ydS9jZHAvZ3VjX2dvc3QxMi5jcmwwLaAroCmGJ2h0dHA6Ly9jb21wYW55LnJ0LnJ1L2NkcC9ndWNfZ29zdDEyLmNybDAtoCugKYYnaHR0cDovL3Jvc3RlbGVjb20ucnUvY2RwL2d1Y19nb3N0MTIuY3JsMEMGCCsGAQUFBwEBBDcwNTAzBggrBgEFBQcwAoYnaHR0cDovL3JlZXN0ci1wa2kucnUvY2RwL2d1Y19nb3N0MTIuY3J0MIH1BgUqhQNkcASB6zCB6Aw00J/QkNCa0JwgwqvQmtGA0LjQv9GC0L7Qn9GA0L4gSFNNwrsg0LLQtdGA0YHQuNC4IDIuMAxD0J/QkNCaIMKr0JPQvtC70L7QstC90L7QuSDRg9C00L7RgdGC0L7QstC10YDRj9GO0YnQuNC5INGG0LXQvdGC0YDCuww10JfQsNC60LvRjtGH0LXQvdC40LUg4oSWIDE0OS8zLzIvMi8yMyDQvtGCIDAyLjAzLjIwMTgMNNCX0LDQutC70Y7Rh9C10L3QuNC1IOKEliAxNDkvNy82LzEwNSDQvtGCIDI3LjA2LjIwMTgwCgYIKoUDBwEBAwIDQQAcnisiqnu3Fi/X+i/xjnBgfkviYunAjRa2W1HeWnSUCUV7Ykf3KU+V/uEtVf3YoCWngluwfHHW0BpH5PJ5mtH6MIIJZzCCCRSgAwIBAgIRAeG5wQDBq/GjSXcS7ES2aDEwCgYIKoUDBwEBAwIwggHQMRgwFgYFKoUDZAESDTEwOTcyMzIwMDE3MDExGjAYBggqhQMDgQMBARIMMDA3MjA0MTQxMzIzMRkwFwYJKoZIhvcNAQkBFgp1Y0ByazcyLnJ1MQswCQYDVQQGEwJSVTEtMCsGA1UECAwkNzIg0KLRjtC80LXQvdGB0LrQsNGPINC+0LHQu9Cw0YHRgtGMMRUwEwYDVQQHDAzQotGO0LzQtdC90YwxNjA0BgNVBAkMLdGD0LsuINCh0LDQu9GC0YvQutC+0LLQsC3QqdC10LTRgNC40L3QsCwgNTMvMzF4MHYGA1UECgxv0J7QkdCp0JXQodCi0JLQniDQoSDQntCT0KDQkNCd0JjQp9CV0J3QndCe0Jkg0J7QotCS0JXQotCh0KLQktCV0J3QndCe0KHQotCs0K4gItCg0KPQodCh0JrQkNCvINCa0J7QnNCf0JDQndCY0K8iMXgwdgYDVQQDDG/QntCR0KnQldCh0KLQktCeINChINCe0JPQoNCQ0J3QmNCn0JXQndCd0J7QmSDQntCi0JLQldCi0KHQotCS0JXQndCd0J7QodCi0KzQriAi0KDQo9Ch0KHQmtCQ0K8g0JrQntCc0J/QkNCd0JjQryIwHhcNMjAwNTIwMTEzNTIwWhcNMjEwNTIwMTE0NTIwWjCCAc4xGDAWBgUqhQNkARINMTAyNzIwMDc4OTIyMDEWMBQGBSqFA2QDEgsxMzgzMzg5MzM4OTEaMBgGCCqFAwOBAwEBEgwwMDcyMDEwMDA3MjYxLzAtBgkqhkiG9w0BCQEWIERha2hhbm92YUFBQHR1bS50bW4udHJhbnNuZWZ0LnJ1MQswCQYDVQQGEwJSVTEtMCsGA1UECAwkNzIg0KLRjtC80LXQvdGB0LrQsNGPINC+0LHQu9Cw0YHRgtGMMRUwEwYDVQQHDAzQotGO0LzQtdC90YwxKDAmBgNVBAkMH9GD0LsuINCg0LXRgdC/0YPQsdC70LjQutC4LCAxMzkxMzAxBgNVBAoMKtCQ0J4gItCi0KDQkNCd0KHQndCV0KTQotCsIC0g0KHQmNCR0JjQoNCsIjEXMBUGA1UEDAwO0JjQvdC20LXQvdC10YAxLDAqBgNVBCoMI9Cd0LDQtNC10LbQtNCwINCS0LjQutGC0L7RgNC+0LLQvdCwMR8wHQYDVQQEDBbQodC60LDRgNC20LjQvdGB0LrQsNGPMTMwMQYDVQQDDCrQkNCeICLQotCg0JDQndCh0J3QldCk0KLQrCAtINCh0JjQkdCY0KDQrCIwZjAfBggqhQMHAQEBATATBgcqhQMCAiQABggqhQMHAQECAgNDAARAEd3wvtTvV91IehuBibu01oLc+p2sExqOdWFkfprbI88ZEMQWqOh7xtOCxH3vSkuUJdexE40tF1R+gO8s/ig8WKOCBL4wggS6MFIGA1UdJQRLMEkGCCsGAQUFBwMEBgcqhQMCAiIGBggrBgEFBQcDAgYGKoUDZHEBBgYqhQNkcQIGByqFAwICIhoGByqFAwICIhkGCCqFAwMFCgIMMA4GA1UdDwEB/wQEAwIE8DAZBgkqhkiG9w0BCQ8EDDAKMAgGBiqFAwICFTAdBgNVHQ4EFgQUI3GsNWAc1kk8E5ObCt16R5zSa7gwdwYIKwYBBQUHAQEEazBpMDcGCCsGAQUFBzABhitodHRwOi8vb2NzcC5yazcyLnJ1L29jc3Atb29vcmsyMDE5L29jc3Auc3JmMC4GCCsGAQUFBzAChiJodHRwOi8vY2VydDMucms3Mi5ydS9vb29yazIwMTkuY2VyMB0GA1UdIAQWMBQwCAYGKoUDZHEBMAgGBiqFA2RxAjArBgNVHRAEJDAigA8yMDIwMDUyMDExMzUyMFqBDzIwMjEwNTIwMTE0NTIwWjCCAW4GBSqFA2RwBIIBYzCCAV8MI9Ca0YDQuNC/0YLQvtCf0YDQviBDU1AgNC4wICgyLUJhc2UpDFvQn9CQ0JogItCj0LTQvtGB0YLQvtCy0LXRgNGP0Y7RidC40Lkg0YbQtdC90YLRgCAi0JrRgNC40L/RgtC+0J/RgNC+INCj0KYiINCy0LXRgNGB0LjRjyAyLjAiDE3QodC10YDRgtC40YTQuNC60LDRgtGLINGB0L7QvtGC0LLQtdGC0YHRgtCy0LjRjyDQodCkLzEyNC0zMzgwINC+0YIgMTEuMDUuMjAxOAyBi9Ch0LXRgNGC0LjRhNC40LrQsNGC0Ysg0YHQvtC+0YLQstC10YLRgdGC0LLQuNGPINCh0KQxMjgtMzU5MiDQvtGCIDE3INC+0LrRgtGP0LHRgNGPIDIwMTgg0LMuINC90LAg0JjRgdC/0L7Qu9C90LXQvdC40LUgNSAo0LrQu9Cw0YHRgSDQmtChMikwIwYFKoUDZG8EGgwYItCa0YDQuNC/0YLQvtCf0YDQviBDU1AiMFsGA1UdHwRUMFIwKKAmoCSGImh0dHA6Ly9jZXJ0My5yazcyLnJ1L29vb3JrMjAxOS5jcmwwJqAkoCKGIGh0dHA6Ly9yazcyLnJ1L2NkcC9vb29yazIwMTkuY3JsMIIBXwYDVR0jBIIBVjCCAVKAFHDOMOo4CR7bktwQTtc5CRfssiIRoYIBLKSCASgwggEkMR4wHAYJKoZIhvcNAQkBFg9kaXRAbWluc3Z5YXoucnUxCzAJBgNVBAYTAlJVMRgwFgYDVQQIDA83NyDQnNC+0YHQutCy0LAxGTAXBgNVBAcMENCzLiDQnNC+0YHQutCy0LAxLjAsBgNVBAkMJdGD0LvQuNGG0LAg0KLQstC10YDRgdC60LDRjywg0LTQvtC8IDcxLDAqBgNVBAoMI9Cc0LjQvdC60L7QvNGB0LLRj9C30Ywg0KDQvtGB0YHQuNC4MRgwFgYFKoUDZAESDTEwNDc3MDIwMjY3MDExGjAYBggqhQMDgQMBARIMMDA3NzEwNDc0Mzc1MSwwKgYDVQQDDCPQnNC40L3QutC+0LzRgdCy0Y/Qt9GMINCg0L7RgdGB0LjQuIIKaqcJNgAAAAACUjAKBggqhQMHAQEDAgNBADLJKvaImVT7JVEHHgTit3Vz7Y8W3bHOZk7LEYOIbXQslzIz+ufZo1DVAsfPpjynFEIlShjcJ8yCXDhQlvZsZ3YxggT/MIIE+wIBATCCAecwggHQMRgwFgYFKoUDZAESDTEwOTcyMzIwMDE3MDExGjAYBggqhQMDgQMBARIMMDA3MjA0MTQxMzIzMRkwFwYJKoZIhvcNAQkBFgp1Y0ByazcyLnJ1MQswCQYDVQQGEwJSVTEtMCsGA1UECAwkNzIg0KLRjtC80LXQvdGB0LrQsNGPINC+0LHQu9Cw0YHRgtGMMRUwEwYDVQQHDAzQotGO0LzQtdC90YwxNjA0BgNVBAkMLdGD0LsuINCh0LDQu9GC0YvQutC+0LLQsC3QqdC10LTRgNC40L3QsCwgNTMvMzF4MHYGA1UECgxv0J7QkdCp0JXQodCi0JLQniDQoSDQntCT0KDQkNCd0JjQp9CV0J3QndCe0Jkg0J7QotCS0JXQotCh0KLQktCV0J3QndCe0KHQotCs0K4gItCg0KPQodCh0JrQkNCvINCa0J7QnNCf0JDQndCY0K8iMXgwdgYDVQQDDG/QntCR0KnQldCh0KLQktCeINChINCe0JPQoNCQ0J3QmNCn0JXQndCd0J7QmSDQntCi0JLQldCi0KHQotCS0JXQndCd0J7QodCi0KzQriAi0KDQo9Ch0KHQmtCQ0K8g0JrQntCc0J/QkNCd0JjQryICEQHhucEAwavxo0l3EuxEtmgxMAwGCCqFAwcBAQICBQCgggKrMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMDgyMTE1MDYzNlowLwYJKoZIhvcNAQkEMSIEIFuV0bMt6q99z+0aUAt+IjqqztrqkUT5tZAD73GtkZjPMIICPgYLKoZIhvcNAQkQAi8xggItMIICKTCCAiUwggIhMAoGCCqFAwcBAQICBCAa5I3BFhSmtFCoS89LLaYwN8UgHKP8n9iJZW6rWYXRqTCCAe8wggHYpIIB1DCCAdAxGDAWBgUqhQNkARINMTA5NzIzMjAwMTcwMTEaMBgGCCqFAwOBAwEBEgwwMDcyMDQxNDEzMjMxGTAXBgkqhkiG9w0BCQEWCnVjQHJrNzIucnUxCzAJBgNVBAYTAlJVMS0wKwYDVQQIDCQ3MiDQotGO0LzQtdC90YHQutCw0Y8g0L7QsdC70LDRgdGC0YwxFTATBgNVBAcMDNCi0Y7QvNC10L3RjDE2MDQGA1UECQwt0YPQuy4g0KHQsNC70YLRi9C60L7QstCwLdCp0LXQtNGA0LjQvdCwLCA1My8zMXgwdgYDVQQKDG/QntCR0KnQldCh0KLQktCeINChINCe0JPQoNCQ0J3QmNCn0JXQndCd0J7QmSDQntCi0JLQldCi0KHQotCS0JXQndCd0J7QodCi0KzQriAi0KDQo9Ch0KHQmtCQ0K8g0JrQntCc0J/QkNCd0JjQryIxeDB2BgNVBAMMb9Ce0JHQqdCV0KHQotCS0J4g0KEg0J7Qk9Cg0JDQndCY0KfQldCd0J3QntCZINCe0KLQktCV0KLQodCi0JLQldCd0J3QntCh0KLQrNCuICLQoNCj0KHQodCa0JDQryDQmtCe0JzQn9CQ0J3QmNCvIgIRAeG5wQDBq/GjSXcS7ES2aDEwDAYIKoUDBwEBAQEFAARAlNKd8n2vnkCIdxhwcaRSZ2XEmQSM5hIDQ/75uHFPqzCSlpP4eIYJnOv4+qy6y4m6OMas/ZTT+R20rl/VtlpcUA==
+                </sign>
+                <hash2012>AE86DE7EBA98F61727572EC07B889D2780443BE8E82517DE8B9C8E2EAB1E318E</hash2012>
+                <filecomment/>
+            </file>
+            <file>
+                <signtype>hash</signtype>
+                <fileid>e033b11b-d990-4847-8607-88155ce69e83</fileid>
+                <filename>проект договора (tipmtr) rar.rar</filename>
+                <signinfo/>
+                <filecreatedt>21.08.2020</filecreatedt>
+                <hash>9DDAE12253381FF2EB164C7DF108825FDA150D37F16A3F6F0F5A6AAE5164088F</hash>
+                <sign>
+                    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
+                </sign>
+                <hash2012>441AC1576036D46E10B1A8FD96111BE27E99180292CBC6FB202D58A333489833</hash2012>
+                <filecomment/>
+            </file>
+        </Docs>
+    </DocsDiv>
+    <PurchaseDocumentationInfo>
+        <PurchaseDocumentationDocsInfo>
+            <DocFiles>
+                <totaldocumentscount>3</totaldocumentscount>
+                <document>
+                    <guid>b8971da2-efae-4a3b-8cd7-8048bee9545c</guid>
+                    <createdatetime>2020-08-21T13:08:12</createdatetime>
+                    <filename>проект договора (tipmtr) rar.rar</filename>
+                    <description>проект договора (tipmtr) rar.rar</description>
+                    <url>https://zakupki.gov.ru/223/purchase/public/download/download.html?id=64197751</url>
+                </document>
+                <document>
+                    <guid>b7f7f964-54a3-4749-8210-b98180a38573</guid>
+                    <createdatetime>2020-08-21T13:08:12</createdatetime>
+                    <filename>Извещение об осуществлении закупки.doc</filename>
+                    <description>Извещение об осуществлении закупки.doc</description>
+                    <url>https://zakupki.gov.ru/223/purchase/public/download/download.html?id=64197750</url>
+                </document>
+                <document>
+                    <guid>58a7bc0f-b034-44ac-b1b3-1e0cfdcbd879</guid>
+                    <createdatetime>2020-08-21T13:08:12</createdatetime>
+                    <filename>Документация о закупке.rar</filename>
+                    <description>Документация о закупке.rar</description>
+                    <url>https://zakupki.gov.ru/223/purchase/public/download/download.html?id=64197749</url>
+                </document>
+            </DocFiles>
+        </PurchaseDocumentationDocsInfo>
+        <PurchaseDocumentationOrderInfo>
+            <PurchaseDocumentationOrder>http://utp.sberbank-ast.ru/Transneft</PurchaseDocumentationOrder>
+            <PurchaseDocumentationPlace>http://utp.sberbank-ast.ru/Trade</PurchaseDocumentationPlace>
+            <PurchaseDocumentationProvisionEndDate>31.08.2020</PurchaseDocumentationProvisionEndDate>
+            <PurchaseDocumentationProvisionStartDate>21.08.2020</PurchaseDocumentationProvisionStartDate>
+        </PurchaseDocumentationOrderInfo>
+    </PurchaseDocumentationInfo>
+    <PurchaseInfoTotal>
+        <ContactInfo>
+            <ContactEmail>SkarzhinskayaNV@tum.tmn.transneft.ru</ContactEmail>
+            <ContactPerson>Скаржинская Надежда Викторовна</ContactPerson>
+            <ContactPhone>83452493123</ContactPhone>
+        </ContactInfo>
+        <OrganizatorInfo>
+            <orgbutsid>1114976</orgbutsid>
+            <orginn>7201000726</orginn>
+            <orgkpp>720301001</orgkpp>
+            <orgogrn>1027200789220</orgogrn>
+            <orgiko>57201000726720301001</orgiko>
+            <orgname>Акционерное общество «Транснефть - Сибирь»</orgname>
+            <orgaddressjur>625048, Россия, Тюменская область, Тюмень, Республики, д. 139</orgaddressjur>
+            <orgaddressfact>625048, Россия, Тюменская область, Тюмень, Республики, д. 139</orgaddressfact>
+            <timezone>2</timezone>
+            <timezonecode>2</timezonecode>
+            <timezonename>МСК+2 (СГВ+5) Екатеринбург, Салехард, Сургут, Оренбург</timezonename>
+        </OrganizatorInfo>
+        <PurchaseInfo>
+            <PurchaseCode>SBR043-200111497601156</PurchaseCode>
+            <PurchaseEmergency>0</PurchaseEmergency>
+            <PurchaseEmergencyName>Нет</PurchaseEmergencyName>
+            <PurchaseId>635553</PurchaseId>
+            <PurchaseIntegratorCode>&amp;lt;a target="_blank"
+                href="http://zakupki.gov.ru/223/purchase/public/purchase/info/common-info.html?regNumber=32009423816"&amp;gt;32009423816&amp;lt;/a&amp;gt;
+            </PurchaseIntegratorCode>
+            <PurchaseJoint>Not</PurchaseJoint>
+            <PurchaseJointName>Нет</PurchaseJointName>
+            <PurchaseName>06-02/ТУМН/ТСИБ/РЭН/07.2020/81/"Сварочные материалы"</PurchaseName>
+            <PurchaseNotDishonestName>Да</PurchaseNotDishonestName>
+            <PurchaseOOSregistrationNumber>32009423816</PurchaseOOSregistrationNumber>
+            <PurchaseRegionId>267841</PurchaseRegionId>
+            <PurchaseRegionIdName>Тюменская область</PurchaseRegionIdName>
+            <PurchaseStatusName>Прием заявок</PurchaseStatusName>
+            <PurchaseTypeInfo>
+                <PurchaseTypeName>Аукцион в электронной форме, участниками которого могут являться только субъекты
+                    малого и среднего предпринимательства
+                </PurchaseTypeName>
+            </PurchaseTypeInfo>
+        </PurchaseInfo>
+        <PurchasePlan>
+            <ExaminationInfo>
+                <ExaminationOrder>Установлен в инструкции для участника закупки</ExaminationOrder>
+                <ExaminationPlace>http://utp.sberbank-ast.ru/Transneft</ExaminationPlace>
+            </ExaminationInfo>
+        </PurchasePlan>
+        <SupplierRequirementInfo>
+            <PurchaseNotDishonest>1</PurchaseNotDishonest>
+            <PurchaseNotDishonestName>Да</PurchaseNotDishonestName>
+        </SupplierRequirementInfo>
+    </PurchaseInfoTotal>
+    <PurchaseOOSContactFirstName>Скаржинская Надежда Викторовна</PurchaseOOSContactFirstName>
+    <PurchasePlan>
+        <ApplSubmissionInfo>
+            <ApplSubmissionOrder>Установлен в инструкции для участника закупки</ApplSubmissionOrder>
+            <ApplSubmissionStartDate>21.08.2020 10:56</ApplSubmissionStartDate>
+            <ApplSubmissionStopDate>31.08.2020 07:00</ApplSubmissionStopDate>
+        </ApplSubmissionInfo>
+        <ConsiderationFirstPartInfo>
+            <ConsiderationFirstPartDate>03.09.2020</ConsiderationFirstPartDate>
+            <ConsiderationFirstPartOrder>Установлен в инструкции для участника закупки</ConsiderationFirstPartOrder>
+            <ConsiderationFirstPartPlace>625026, г. Тюмень, пр. Геологоразведчиков, д. 2а</ConsiderationFirstPartPlace>
+        </ConsiderationFirstPartInfo>
+        <ConsiderationSecondPartInfo>
+            <ConsiderationSecondPartDate>17.09.2020</ConsiderationSecondPartDate>
+            <ConsiderationSecondPartOrder>Установлен в инструкции для участника закупки</ConsiderationSecondPartOrder>
+            <ConsiderationSecondPartPlace>625026, г. Тюмень, пр. Геологоразведчиков, д. 2а
+            </ConsiderationSecondPartPlace>
+        </ConsiderationSecondPartInfo>
+        <ExaminationInfo>
+            <ExaminationOrder>Установлен в инструкции для участника закупки</ExaminationOrder>
+            <ExaminationPlace>http://utp.sberbank-ast.ru/Transneft</ExaminationPlace>
+        </ExaminationInfo>
+        <PricesProvisionInfo>
+            <PricesProvisionDate>07.09.2020 10:00</PricesProvisionDate>
+        </PricesProvisionInfo>
+        <SummingupInfo>
+            <SummingupDate>17.09.2020</SummingupDate>
+            <SummingupOrder>Установлен в инструкции для участника закупки</SummingupOrder>
+            <SummingupPlace>625026, г. Тюмень, пр. Геологоразведчиков, д. 2а</SummingupPlace>
+        </SummingupInfo>
+    </PurchasePlan>
+    <TenderInfo>
+        <AuctionStartDate>07.09.2020 10:00</AuctionStartDate>
+        <RequestStartDate>21.08.2020 10:56</RequestStartDate>
+        <RequestStopDate>31.08.2020 07:00</RequestStopDate>
+    </TenderInfo>
+    <Bids>
+        <Bid>
+            <BidInfoTotal>
+                <ApplicationSupplyInfo>
+                    <BidApplicationSupplySumm>0.00</BidApplicationSupplySumm>
+                    <BidApplicationSupplyType>8</BidApplicationSupplyType>
+                    <BidApplicationSupplyTypeName>Не установлено</BidApplicationSupplyTypeName>
+                    <BidDeposit>3099.81</BidDeposit>
+                </ApplicationSupplyInfo>
+                <BidAdditionalInfo>
+                    <BidComment>Сроки (периоды) осуществления поставки товара, выполнения работ, оказания услуг:
+                        31.10.2020 г.
+                    </BidComment>
+                    <BidTradeTypeName>По лоту в целом</BidTradeTypeName>
+                </BidAdditionalInfo>
+                <BidInfo>
+                    <BidId>1142525</BidId>
+                    <BidName>06-02/ТУМН/ТСИБ/РЭН/07.2020/81/"Сварочные материалы"</BidName>
+                    <BidNo>81</BidNo>
+                    <BidStatusName>Прием заявок</BidStatusName>
+                    <BidSubcontractorsRequirement>0</BidSubcontractorsRequirement>
+                    <BidSubcontractorsRequirementName>Нет</BidSubcontractorsRequirementName>
+                </BidInfo>
+                <BidPlaceInfo>
+                    <BidDeliveryPlace>625047, г. Тюмень, 5 км Старого Тобольского тракта, 8, НППС «Тюмень»
+                    </BidDeliveryPlace>
+                    <BidDeliveryPlaceIndicationType>GL</BidDeliveryPlaceIndicationType>
+                    <BidDeliveryPlaceIndicationTypeName>По лоту в целом</BidDeliveryPlaceIndicationTypeName>
+                </BidPlaceInfo>
+                <BidPriceInfo>
+                    <BidCurrency>267655</BidCurrency>
+                    <BidCurrencyName>Российский рубль</BidCurrencyName>
+                    <BidPrice>309980.89</BidPrice>
+                    <BidPriceCulcType>lotPrice</BidPriceCulcType>
+                    <BidPriceCulcTypeName>Сведения о начальной максимальной цене договора (цене лота)
+                    </BidPriceCulcTypeName>
+                    <BidPriceMin>309980.89</BidPriceMin>
+                </BidPriceInfo>
+                <BidTenderInfo>
+                    <BidAuctionStartDate>07.09.2020 10:00</BidAuctionStartDate>
+                    <BidAuctionStepMaxPercent>5.00</BidAuctionStepMaxPercent>
+                    <BidAuctionStepMinPercent>0.50</BidAuctionStepMinPercent>
+                </BidTenderInfo>
+                <BidCustomerDatas>
+                    <BidCustomerData>
+                        <BidCustomerDataInfo>
+                            <BidCustomerInfo>
+                                <BidCustomerBuTSId>1114976</BidCustomerBuTSId>
+                                <BidCustomerId>649668</BidCustomerId>
+                                <BidCustomerIKO>57201000726720301001</BidCustomerIKO>
+                                <BidCustomerINN>7201000726</BidCustomerINN>
+                                <BidCustomerKPP>720301001</BidCustomerKPP>
+                                <BidCustomerNickName>АО ТРАНСНЕФТЬ-СИБИРЬ</BidCustomerNickName>
+                                <BidCustomerOGRN>1027200789220</BidCustomerOGRN>
+                                <BidMainCustomer>1</BidMainCustomer>
+                            </BidCustomerInfo>
+                            <BidCustomerPriceInfo>
+                                <BidCustomerAmount>309980.89</BidCustomerAmount>
+                            </BidCustomerPriceInfo>
+                            <PlanInfo>
+                                <BidEISExcludePurchaseFromPlan>0</BidEISExcludePurchaseFromPlan>
+                                <BidEISExcludePurchaseFromPlanName>Нет</BidEISExcludePurchaseFromPlanName>
+                                <PlanPositionOrdinalNumber>342</PlanPositionOrdinalNumber>
+                                <PlanRegistrationNumber>2190388745</PlanRegistrationNumber>
+                            </PlanInfo>
+                            <BidPositionsDiv>
+                                <BidPositions>
+                                    <BidPosition>
+                                        <BidPositionName>Сварочные материалы</BidPositionName>
+                                        <BidPositionNo>1</BidPositionNo>
+                                        <BidPositionOKEIName>Условная единица</BidPositionOKEIName>
+                                        <BidPositionOKPD2Name>Оборудование и инструменты для пайки мягким и твердым
+                                            припоем, и сварки неэлектрические и их комплектующие (запасные части), не
+                                            имеющие самостоятельных группировок
+                                        </BidPositionOKPD2Name>
+                                        <BidPositionOKVED2Name>Производство неэлектрического оборудования и инструментов
+                                            для пайки мягким и твердым припоем или сварки, машин и аппаратов для
+                                            газотермического напыления
+                                        </BidPositionOKVED2Name>
+                                        <BidPositionQuantity>652.20</BidPositionQuantity>
+                                    </BidPosition>
+                                </BidPositions>
+                            </BidPositionsDiv>
+                        </BidCustomerDataInfo>
+                    </BidCustomerData>
+                </BidCustomerDatas>
+            </BidInfoTotal>
+        </Bid>
+    </Bids>
+    <EventsDiv>
+        <Events>
+            <Event>
+                <EventDate>21.08.2020 13:06</EventDate>
+                <EventDescription>Создание извещения</EventDescription>
+            </Event>
+            <Event>
+                <EventDate>21.08.2020 13:21</EventDate>
+                <EventDescription>Получение извещения с Официального сайта ЕИС</EventDescription>
+            </Event>
+            <Event>
+                <EventDate>21.08.2020 13:22</EventDate>
+                <EventDescription>Начало периода приема заявок</EventDescription>
+            </Event>
+        </Events>
+    </EventsDiv>
+</Purchase>

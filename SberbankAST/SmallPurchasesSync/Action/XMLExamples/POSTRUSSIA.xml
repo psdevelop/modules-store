@@ -1,0 +1,182 @@
+<Purchase folderName="SBR035-200014731500043">
+    <PurchaseDocumentationInfo>
+        <PurchaseDocumentationDocsInfo>
+            <Docs>
+                <file>
+                    <signtype>hash</signtype>
+                    <fileid>6c1aff2f-467d-4109-9d12-51833d488230</fileid>
+                    <filename>ДпЗ-20-000000055074.docx</filename>
+                    <signinfo/>
+                    <filecreatedt>14.08.2020</filecreatedt>
+                    <hash>6E32A5CB1E66EC818C8E55784B793D884F670EADC3F2C434B9F17C158B2C23DC</hash>
+                    <sign>
+                        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
+                    </sign>
+                    <hash2012>483A71C2100722AFDDEC363A5A039E69222CE17A74B4F659B5D291559E569268</hash2012>
+                    <filecomment/>
+                </file>
+            </Docs>
+        </PurchaseDocumentationDocsInfo>
+        <PurchaseDocumentationOrderInfo>
+            <PurchaseDocumentationOrder>Извещение предоставляется в электронном виде.</PurchaseDocumentationOrder>
+            <PurchaseDocumentationPayment>reject</PurchaseDocumentationPayment>
+            <PurchaseDocumentationPlace>Извещение находится в открытом доступе на сайтах, указанных в п. 1.8, 1.9
+                Извещения.
+            </PurchaseDocumentationPlace>
+            <PurchaseDocumentationProvisionEndDate>28.08.2020</PurchaseDocumentationProvisionEndDate>
+            <PurchaseDocumentationProvisionStartDate>17.08.2020</PurchaseDocumentationProvisionStartDate>
+        </PurchaseDocumentationOrderInfo>
+    </PurchaseDocumentationInfo>
+    <PurchaseInfoTotal>
+        <ContactInfo>
+            <ContactEmail>Vinokurova.Olga@russianpost.ru</ContactEmail>
+            <ContactPerson>Винокурова Ольга Михайловна</ContactPerson>
+            <ContactPhone>+74912274913</ContactPhone>
+        </ContactInfo>
+        <OrganizatorInfo>
+            <orgbutsid>147315</orgbutsid>
+            <orginn>7724490000</orginn>
+            <orgkpp>623443001</orgkpp>
+            <orgogrn>1197746000000</orgogrn>
+            <orgiko>57724490000623443001</orgiko>
+            <orgname>УФПС Рязанской области</orgname>
+            <orgaddressjur>390000, Рязанская обл, Рязань г, Почтовая ул, дом № 49</orgaddressjur>
+            <orgaddressfact>390000, Рязанская обл, Рязань г, Почтовая ул, дом № 49</orgaddressfact>
+        </OrganizatorInfo>
+        <PurchaseInfo>
+            <PurchaseBranchId>68390</PurchaseBranchId>
+            <PurchaseBranchIdName>Услуги в непроизводственной сфере</PurchaseBranchIdName>
+            <PurchaseCode>SBR035-200014731500043</PurchaseCode>
+            <PurchaseEmergency>0</PurchaseEmergency>
+            <PurchaseEmergencyName>Нет</PurchaseEmergencyName>
+            <PurchaseGroupRP>138993</PurchaseGroupRP>
+            <PurchaseGroupRPName>Охрана труда, спецодежда, промышленная, пожарная безопасность и ГО
+            </PurchaseGroupRPName>
+            <PurchaseId>632944</PurchaseId>
+            <PurchaseName>Оказание услуг по поверке приборов учета в ОПС Рязанской области для нужд УФПС Рязанской
+                области.
+            </PurchaseName>
+            <PurchaseNotDishonestName>Да</PurchaseNotDishonestName>
+            <PurchaseRegionId>1206</PurchaseRegionId>
+            <PurchaseRegionIdName>Рязанская область</PurchaseRegionIdName>
+            <PurchaseStatusName>Опубликован(-а)</PurchaseStatusName>
+            <PurchaseTypeInfo>
+                <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только
+                    субъекты малого и среднего предпринимательства
+                </PurchaseTypeName>
+            </PurchaseTypeInfo>
+        </PurchaseInfo>
+        <PurchasePlan>
+            <ExaminationInfo>
+                <ExaminationDate>31.08.2020</ExaminationDate>
+                <ExaminationOrder>В соответствии извещению</ExaminationOrder>
+                <ExaminationPlace>390000, Рязанская обл, Рязань г, Почтовая ул, дом № 49</ExaminationPlace>
+            </ExaminationInfo>
+        </PurchasePlan>
+        <SupplierRequirementInfo>
+            <PurchaseNotDishonest>1</PurchaseNotDishonest>
+            <PurchaseNotDishonestName>Да</PurchaseNotDishonestName>
+        </SupplierRequirementInfo>
+    </PurchaseInfoTotal>
+    <PurchasePlan>
+        <ApplSubmissionInfo>
+            <ApplSubmissionOrder>В соответствии извещению</ApplSubmissionOrder>
+            <ApplSubmissionStartDate>17.08.2020 09:00</ApplSubmissionStartDate>
+            <ApplSubmissionStopDate>28.08.2020 09:00</ApplSubmissionStopDate>
+        </ApplSubmissionInfo>
+        <ExaminationInfo>
+            <ExaminationDate>31.08.2020</ExaminationDate>
+            <ExaminationOrder>В соответствии извещению</ExaminationOrder>
+            <ExaminationPlace>390000, Рязанская обл, Рязань г, Почтовая ул, дом № 49</ExaminationPlace>
+        </ExaminationInfo>
+        <SummingupInfo>
+            <SummingupDate>31.08.2020</SummingupDate>
+            <SummingupOrder>В соответствии извещению</SummingupOrder>
+            <SummingupPlace>390000, Рязанская обл, Рязань г, Почтовая ул, дом № 49</SummingupPlace>
+        </SummingupInfo>
+    </PurchasePlan>
+    <Bids>
+        <Bid>
+            <BidInfoTotal>
+                <ApplicationSupplyInfo>
+                    <BidApplicationSupplyCurrency>50</BidApplicationSupplyCurrency>
+                    <BidApplicationSupplyCurrencyName>Российский рубль</BidApplicationSupplyCurrencyName>
+                    <BidApplicationSupplyExtra>В соответствии с документацией</BidApplicationSupplyExtra>
+                    <BidApplicationSupplySumm>0.00</BidApplicationSupplySumm>
+                    <BidApplicationSupplyType>8</BidApplicationSupplyType>
+                    <BidApplicationSupplyTypeName>Не установлено</BidApplicationSupplyTypeName>
+                    <BidDeposit>2403.28</BidDeposit>
+                </ApplicationSupplyInfo>
+                <BidInfo>
+                    <BidId>1139154</BidId>
+                    <BidName>Оказание услуг по поверке приборов учета в ОПС Рязанской области для нужд УФПС Рязанской
+                        области.
+                    </BidName>
+                    <BidNo>1</BidNo>
+                    <BidPurchaseDescription>В соответствии с Извещением</BidPurchaseDescription>
+                    <BidStatusName>Опубликован(-а)</BidStatusName>
+                    <BidSubcontractorsRequirement>0</BidSubcontractorsRequirement>
+                    <BidSubcontractorsRequirementName>Нет</BidSubcontractorsRequirementName>
+                </BidInfo>
+                <BidPlaceInfo>
+                    <BidDeliveryPlace>В соответствии с Извещением</BidDeliveryPlace>
+                    <BidDeliveryPlaceIndicationType>GL</BidDeliveryPlaceIndicationType>
+                    <BidDeliveryPlaceIndicationTypeName>По лоту в целом</BidDeliveryPlaceIndicationTypeName>
+                </BidPlaceInfo>
+                <BidPriceInfo>
+                    <BidCurrency>50</BidCurrency>
+                    <BidCurrencyName>Российский рубль</BidCurrencyName>
+                    <BidCurrentPrice>200273.60</BidCurrentPrice>
+                    <BidPrice>200273.60</BidPrice>
+                    <BidPriceCulcType>lotPrice</BidPriceCulcType>
+                    <BidPriceCulcTypeName>Сведения о начальной максимальной цене договора (цене лота)
+                    </BidPriceCulcTypeName>
+                </BidPriceInfo>
+                <BidCustomerDataInfo>
+                    <BidCustomerInfo>
+                        <BidCustomerBuTSId>147315</BidCustomerBuTSId>
+                        <BidCustomerId>647404</BidCustomerId>
+                        <BidCustomerIKO>57724490000623443001</BidCustomerIKO>
+                        <BidCustomerINN>7724490000</BidCustomerINN>
+                        <BidCustomerKPP>623443001</BidCustomerKPP>
+                        <BidCustomerNickName>УФПС Рязанской области</BidCustomerNickName>
+                        <BidCustomerOGRN>1197746000000</BidCustomerOGRN>
+                    </BidCustomerInfo>
+                    <BidCustomerPriceInfo>
+                        <BidCustomerAmount>200273.60</BidCustomerAmount>
+                    </BidCustomerPriceInfo>
+                    <PlanInfo>
+                        <BidEISExcludePurchaseFromPlan>1</BidEISExcludePurchaseFromPlan>
+                        <BidEISExcludePurchaseFromPlanName>Да</BidEISExcludePurchaseFromPlanName>
+                    </PlanInfo>
+                    <BidPositionsDiv>
+                        <BidPositions>
+                            <BidPosition>
+                                <BidPositionName>Оказание услуг по поверке приборов учета в ОПС Рязанской области для
+                                    нужд УФПС Рязанской области.
+                                </BidPositionName>
+                                <BidPositionNo>1</BidPositionNo>
+                                <BidPositionOKEIName>Штука</BidPositionOKEIName>
+                                <BidPositionOKPD2Name>Услуги по ремонту и поверке контрольно-измерительных приборов
+                                </BidPositionOKPD2Name>
+                                <BidPositionOKVED2Name>Техническое обслуживание и ремонт автотранспортных средств
+                                </BidPositionOKVED2Name>
+                                <BidPositionPrice>2064.68</BidPositionPrice>
+                                <BidPositionQuantity>97.00</BidPositionQuantity>
+                            </BidPosition>
+                        </BidPositions>
+                    </BidPositionsDiv>
+                </BidCustomerDataInfo>
+            </BidInfoTotal>
+        </Bid>
+    </Bids>
+    <EventsDiv>
+        <Events>
+            <Event>
+                <EventDate>14.08.2020 14:11</EventDate>
+                <EventDescription>Создание извещения</EventDescription>
+                <EventIsRejected>Нет</EventIsRejected>
+            </Event>
+        </Events>
+    </EventsDiv>
+</Purchase>

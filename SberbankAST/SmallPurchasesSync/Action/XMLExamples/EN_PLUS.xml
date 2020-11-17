@@ -1,0 +1,204 @@
+<Purchase>
+    <Docs>
+        <AuctionDocs>
+            <file>
+                <signtype>hash</signtype>
+                <fileid>142e2a39-8946-4519-8b81-fd998219d3ea</fileid>
+                <filename>Документация.zip</filename>
+                <signinfo/>
+                <filecreatedt>21.08.2020</filecreatedt>
+                <hash>2C0AE880EF286D4ADDAD2280C900648D313F67BA134F16A2F5A246CDFE798989</hash>
+                <sign>
+                    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
+                </sign>
+                <hash2012>3826ED3785C4F81C79352550CF227CE373E557AF477F8B18F84E080A4B68ED03</hash2012>
+                <filecomment/>
+            </file>
+        </AuctionDocs>
+    </Docs>
+    <PurchaseDocumentationInfo>
+        <PurchaseDocumentationDocsInfo>
+            <DocFiles>
+                <document>
+                    <guid>971AD96F-F2E0-4D02-A44D-6D63CBFFB613</guid>
+                    <fileName>Документация.zip</fileName>
+                    <url>http://utp.sberbank-ast.ru/Trade/File/DownloadFile?fid=142e2a39-8946-4519-8b81-fd998219d3ea
+                    </url>
+                </document>
+            </DocFiles>
+        </PurchaseDocumentationDocsInfo>
+    </PurchaseDocumentationInfo>
+    <PurchaseInfoDocumentation>
+        <PurchaseOOSDataProvisionDocumentation>21.08.2020</PurchaseOOSDataProvisionDocumentation>
+        <PurchaseOOSDataProvisionDocumentationPO>09.09.2020</PurchaseOOSDataProvisionDocumentationPO>
+        <PurchaseOOSOrderDocumentation>http://utp.sberbank-ast.ru/Trade</PurchaseOOSOrderDocumentation>
+        <PurchaseOOSPlaceDocumentation>http://utp.sberbank-ast.ru/Trade</PurchaseOOSPlaceDocumentation>
+    </PurchaseInfoDocumentation>
+    <TenderInfo>
+        <PurchaseAuctionResultDate>14.09.2020 10:00</PurchaseAuctionResultDate>
+        <RequestReviewDate>14.09.2020 10:00</RequestReviewDate>
+        <RequestStartDate>21.08.2020 11:00</RequestStartDate>
+        <RequestStopDate>09.09.2020 10:00</RequestStopDate>
+    </TenderInfo>
+    <OrganizatorInfo>
+        <orgbuid>1200805</orgbuid>
+        <orgname>ИРКУТСКОЕ ПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО ЭНЕРГЕТИКИ И ЭЛЕКТРИФИКАЦИИ</orgname>
+        <orginn>3800000220</orginn>
+        <orgkpp>380801001</orgkpp>
+        <orgogrn>1023801003313</orgogrn>
+        <orgiko>53800000220380801001</orgiko>
+        <orgaddressjur>664011, Россия, Иркутская область, Иркутск, Сухэ-Батора, д. 3</orgaddressjur>
+        <orgaddressfact>664011, Россия, Иркутская область, Иркутск, Сухэ-Батора, д. 3</orgaddressfact>
+        <orgemail>spirin_ia@irkutskenergo.ru</orgemail>
+        <orgphone>83952794406</orgphone>
+        <orgcontactperson>Спирин Илья Артёмович</orgcontactperson>
+        <OrgContactPerson>Спирин Илья Артёмович</OrgContactPerson>
+        <OrgEmail>spirin_ia@irkutskenergo.ru</OrgEmail>
+        <OrgPhone>83952794406</OrgPhone>
+    </OrganizatorInfo>
+    <PurchaseInfo>
+        <AutoCreateOpenEnvelopeProtocolIdName>Нет</AutoCreateOpenEnvelopeProtocolIdName>
+        <BranchId>78</BranchId>
+        <BranchIdName>Услуги в непроизводственной сфере</BranchIdName>
+        <IntegrationType>1</IntegrationType>
+        <JointId>269677</JointId>
+        <JointIdName>Нет</JointIdName>
+        <PreferenceForSMP>0</PreferenceForSMP>
+        <PurchaseCode>SBR003-200120080500131</PurchaseCode>
+        <PurchaseId>635437</PurchaseId>
+        <PurchaseName>Разработка проектной и рабочей документации по объектам: «Промливневая канализация». Инв. № Т16
+            00002107. Модернизация сети промливневой канализации». «Вынос внешнего ГЗУ с багерными насосными первого и
+            второго подъема» Инв. № 21640000. Модернизация системы ГЗУ»
+        </PurchaseName>
+        <PurchaseNotDishonest>1</PurchaseNotDishonest>
+        <PurchaseOOSregistrationNumber>&amp;lt;a target="_blank"
+            href="http://zakupki.gov.ru/223/purchase/public/purchase/info/common-info.html?regNumber=32009422970"&amp;gt;32009422970&amp;lt;/a&amp;gt;
+        </PurchaseOOSregistrationNumber>
+        <PurchaseStatusName>Прием заявок</PurchaseStatusName>
+        <PurchaseTypeInfo>
+            <PurchaseTypeName>Анализ предложений в электронной форме</PurchaseTypeName>
+        </PurchaseTypeInfo>
+        <RegionId>924</RegionId>
+        <RegionIdName>Иркутская область</RegionIdName>
+        <TransferCoverAmount>notrequired</TransferCoverAmount>
+    </PurchaseInfo>
+    <Bids>
+        <Bid>
+            <BidInfo>
+                <BidAmount>1530000.00</BidAmount>
+                <BidAnalogValidName>Нет</BidAnalogValidName>
+                <BidApplicationSupplyType>8</BidApplicationSupplyType>
+                <BidApplicationSupplyTypeName>Не установлено</BidApplicationSupplyTypeName>
+                <BidCoverAmount>0.00</BidCoverAmount>
+                <BidCoverAmountOnUTP>0.00</BidCoverAmountOnUTP>
+                <BidCurrency>50</BidCurrency>
+                <BidCurrencyName>Российский рубль</BidCurrencyName>
+                <BidEmergency>0</BidEmergency>
+                <BidExceedStartPrice>244421</BidExceedStartPrice>
+                <BidExceedStartPriceName>Нет</BidExceedStartPriceName>
+                <BidId>1142394</BidId>
+                <BidName>Разработка проектной и рабочей документации по объектам: «Промливневая канализация». Инв. № Т16
+                    00002107.
+                </BidName>
+                <BidNo>1</BidNo>
+                <BidPlace>В соответствии с требованиями закупочной документации.</BidPlace>
+                <BidPreferenceForSMP>0</BidPreferenceForSMP>
+                <BidPreferenceForSMPName>Нет</BidPreferenceForSMPName>
+                <BidStatusId>Прием заявок</BidStatusId>
+                <BidSubcontractorsRequirement>0</BidSubcontractorsRequirement>
+                <BidTradeTypeIdName>По лоту в целом</BidTradeTypeIdName>
+                <Deposit>0.00</Deposit>
+                <DopInfo>
+                    <DopInfoTable>
+                        <Part2Form>
+                            <fieldset>
+                                <fieldsetdesc>setup</fieldsetdesc>
+                                <field>
+                                    <id/>
+                                    <dropdowncontent/>
+                                    <name/>
+                                    <type/>
+                                    <isrequired/>
+                                    <size/>
+                                    <value/>
+                                    <valuetext/>
+                                </field>
+                            </fieldset>
+                        </Part2Form>
+                        <PartForm>
+                            <fieldset>
+                                <fieldsetdesc>setup</fieldsetdesc>
+                                <field>
+                                    <id/>
+                                    <dropdowncontent/>
+                                    <name/>
+                                    <type/>
+                                    <isrequired/>
+                                    <size/>
+                                    <value/>
+                                    <valuetext/>
+                                </field>
+                            </fieldset>
+                        </PartForm>
+                    </DopInfoTable>
+                </DopInfo>
+                <PlanInfo>
+                    <PlanGuid>1376ffca-7267-4d08-892c-fe539b53b067</PlanGuid>
+                    <PlanPositionGuid>3905397E-9C63-4D97-ABCA-93C407D05AEA</PlanPositionGuid>
+                    <PlanPositionOrdinalNumber>1402</PlanPositionOrdinalNumber>
+                    <PlanRegistrationNumber>2190398051</PlanRegistrationNumber>
+                    <PlanType>COMMODITY</PlanType>
+                </PlanInfo>
+                <BidCustomers>
+                    <BidCustomer>
+                        <BidCustomerAddressFact>664011, Россия, Иркутская область, Иркутск, Сухэ-Батора, д. 3
+                        </BidCustomerAddressFact>
+                        <BidCustomerBuTSId>1200805</BidCustomerBuTSId>
+                        <BidCustomerId>649570</BidCustomerId>
+                        <BidCustomerINN>3800000220</BidCustomerINN>
+                        <BidCustomerKPP>380801001</BidCustomerKPP>
+                        <BidCustomerNickName>ПАО "Иркутскэнерго"</BidCustomerNickName>
+                        <BidCustomerOGRN>1023801003313</BidCustomerOGRN>
+                    </BidCustomer>
+                </BidCustomers>
+                <Positions>
+                    <Position>
+                        <PositionId>1554759</PositionId>
+                        <PositionName>Разработка проектной и рабочей документации по объектам: «Промливневая
+                            канализация». Инв. № Т16 00002107.
+                        </PositionName>
+                        <PositionNo>1</PositionNo>
+                        <PositionOKEI>2021</PositionOKEI>
+                        <PositionOKEIName>Условная единица</PositionOKEIName>
+                        <PositionOKPD2>158467</PositionOKPD2>
+                        <PositionOKPD2Name>Сооружения и строительные работы по строительству инженерных коммуникаций для
+                            жидкостей и газов
+                        </PositionOKPD2Name>
+                        <PositionOKVED2>153296</PositionOKVED2>
+                        <PositionOKVED2Name>Строительство инженерных коммуникаций для водоснабжения и водоотведения,
+                            газоснабжения
+                        </PositionOKVED2Name>
+                        <PositionQuantity>1.00</PositionQuantity>
+                    </Position>
+                </Positions>
+            </BidInfo>
+        </Bid>
+    </Bids>
+    <HistoryInfo>
+        <History>
+            <HistoryComment>Создание извещения</HistoryComment>
+            <HistoryDocId>113454628</HistoryDocId>
+            <HistoryDt>21.08.2020 10:51</HistoryDt>
+        </History>
+        <History>
+            <HistoryComment>Оповещение о получении номера, присвоенного Официальным сайтом ЕИС</HistoryComment>
+            <HistoryDocId>113485234</HistoryDocId>
+            <HistoryDt>21.08.2020 15:19</HistoryDt>
+        </History>
+        <History>
+            <HistoryComment>Начало периода приема заявок</HistoryComment>
+            <HistoryDocId>113485284</HistoryDocId>
+            <HistoryDt>21.08.2020 15:20</HistoryDt>
+        </History>
+    </HistoryInfo>
+</Purchase>

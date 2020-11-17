@@ -1,0 +1,131 @@
+<PurchaseView>
+    <DocsDiv>
+        <Docs>
+            <file>
+                <signtype/>
+                <fileid>5c8adf95-75f3-402a-8ea9-303dae18296d</fileid>
+                <filename>Запрос информации.doc</filename>
+                <signinfo/>
+                <filecreatedt>21.08.2020</filecreatedt>
+                <hash>DCDAF8EF18701753C34258BBE207916D88B23B1CC9E80A0FDAD6706B7348AB70</hash>
+                <sign/>
+                <hash2012>ACE30BC39DFA247453A5A0F64C7C2F6995B3840D6DB18B893EFDC35978508DFB</hash2012>
+                <filecomment/>
+            </file>
+            <file>
+                <signtype/>
+                <fileid>d5d38d3a-12b3-409b-a15d-aac351b7f189</fileid>
+                <filename>Приложение 1_Рекомендуемая форма подачи предложения.doc</filename>
+                <signinfo/>
+                <filecreatedt>21.08.2020</filecreatedt>
+                <hash>195E08487C2AD8DD361CF6A4BBCF8F2C4DEB5295E6AACC00D90613E05833B772</hash>
+                <sign/>
+                <hash2012>37B6B29229B869827DA53640A3EAD7385F7B6ED6EEE4E52F0D337663D3D22F9D</hash2012>
+                <filecomment/>
+            </file>
+            <file>
+                <signtype/>
+                <fileid>daa03780-9898-4297-ae42-bdab953e8586</fileid>
+                <filename>Приложение 1 к Рекомендуемой форме подачи заявок.xlsx</filename>
+                <signinfo/>
+                <filecreatedt>21.08.2020</filecreatedt>
+                <hash>5FDB4837D88D5CE97B5E355FF3F21A6C932C5814FFFD7C15EAF0DBC646D654DA</hash>
+                <sign/>
+                <hash2012>2FC8D1214F7D7AEA65960779E50CF4282BEF2DB8243CA0FF819C44D40127EC44</hash2012>
+                <filecomment/>
+            </file>
+            <file>
+                <signtype/>
+                <fileid>d7c0f6d4-9e14-41d3-86b2-24aa852ef833</fileid>
+                <filename>Приложение 2_Техническое задание.xlsx</filename>
+                <signinfo/>
+                <filecreatedt>21.08.2020</filecreatedt>
+                <hash>47360CC74DC1AA0C4F8CFD82A6611E41508B07F5965CDCED4588F32066DF7ABE</hash>
+                <sign/>
+                <hash2012>04CF8C35956F30878F15317AFFF01F0CD7A33D97C700A04A846866F6815017FE</hash2012>
+                <filecomment/>
+            </file>
+            <file>
+                <signtype/>
+                <fileid>84e9aa44-5f67-46f4-a1e8-4c5b6aab151d</fileid>
+                <filename>Приложение 3_Опросный лист.docx</filename>
+                <signinfo/>
+                <filecreatedt>21.08.2020</filecreatedt>
+                <hash>E1496C98CC84963EEAE50F438BC790E21ED00D21324B06834B3EBB5F0B96C4B5</hash>
+                <sign/>
+                <hash2012>749ECBFFA97DAC422BD4386E85E08FB18FB14F4C307EA72A83F5A26966CBD508</hash2012>
+                <filecomment/>
+            </file>
+        </Docs>
+    </DocsDiv>
+    <OrganizatorInfo>
+        <orgbuid>711135</orgbuid>
+        <orgname>Центральный банк Российской Федерации</orgname>
+        <orginn>7702235133</orginn>
+        <orgkpp>526045005</orgkpp>
+        <orgogrn>1037700013020</orgogrn>
+        <orgaddressjur>107016, Россия, Московская область, Москва, Неглинная, д. 12</orgaddressjur>
+        <orgaddressfact>107016, Россия, Московская область, Москва, Неглинная, д. 12</orgaddressfact>
+        <orgemail>22svc_zakupki@cbr.ru</orgemail>
+        <orgphone>+7 (831) 431-98-98, доб. 43-62</orgphone>
+        <orgcontactperson>Токмакова Юлия Анатольевна</orgcontactperson>
+    </OrganizatorInfo>
+    <PurchaseInfo>
+        <BranchId>68402</BranchId>
+        <BranchIdName>Мебель</BranchIdName>
+        <PurchaseAmount>422500.00</PurchaseAmount>
+        <PurchaseCode>SBR031-2008210007</PurchaseCode>
+        <PurchaseID>635760</PurchaseID>
+        <PurchaseName>Запрос информации (сбор коммерческих предложений) в электронной форме о ценах и условиях на
+            поставку офисной мебели
+        </PurchaseName>
+        <PurchaseStatus>Опубликован(-а)</PurchaseStatus>
+        <PurchaseTypeInfo>
+            <PurchaseTypeName>Запрос информации в электронной форме</PurchaseTypeName>
+        </PurchaseTypeInfo>
+        <RegionId>938</RegionId>
+        <RegionIdName>Нижегородская область</RegionIdName>
+    </PurchaseInfo>
+    <PurchasePlan>
+        <PurchasePublicData>21.08.2020 16:15</PurchasePublicData>
+        <RequestResultDate>31.08.2020 18:00</RequestResultDate>
+        <RequestStartDate>24.08.2020 15:00</RequestStartDate>
+        <RequestStopDate>31.08.2020 15:00</RequestStopDate>
+    </PurchasePlan>
+    <Bids>
+        <Bid>
+            <BidInfo>
+                <BidId>1142787</BidId>
+                <BidName>Поставка офисной мебели</BidName>
+                <BidNo>1</BidNo>
+                <BidPrice>422500.00</BidPrice>
+                <BidPriceNotReq>422500.00</BidPriceNotReq>
+                <BidRequestIsMulti>0</BidRequestIsMulti>
+                <BidStatus>Опубликован(-а)</BidStatus>
+                <Currency>138238</Currency>
+                <CurrencyName>Российский рубль</CurrencyName>
+            </BidInfo>
+            <Positions>
+                <Position>
+                    <MaxPrice>422500.00</MaxPrice>
+                    <PosCode>1</PosCode>
+                    <PositionID>1555749</PositionID>
+                    <PositionName>Поставка офисной мебели</PositionName>
+                    <PositionUnit>комплект</PositionUnit>
+                    <Quantity>1.00</Quantity>
+                </Position>
+            </Positions>
+        </Bid>
+    </Bids>
+    <EventsDiv>
+        <Events>
+            <Event>
+                <EventComment>Создание информационного сообщения</EventComment>
+                <EventDate>21.08.2020 16:15</EventDate>
+                <EventDocId>113490271</EventDocId>
+                <EventId>9753142</EventId>
+                <EventTypeId>4</EventTypeId>
+            </Event>
+        </Events>
+    </EventsDiv>
+</PurchaseView>

@@ -1,0 +1,63 @@
+<bidinfototal>
+    <applicationsupplyinfo>
+        <bidapplicationsupplysumm>0.00</bidapplicationsupplysumm>
+        <bidapplicationsupplytype>8</bidapplicationsupplytype>
+        <bidapplicationsupplytypename>Не установлено</bidapplicationsupplytypename>
+        <biddeposit>3071.70</biddeposit>
+    </applicationsupplyinfo>
+    <bidadditionalinfo>
+        <bidtradetypename>По лоту в целом</bidtradetypename>
+    </bidadditionalinfo>
+    <bidinfo>
+        <bidid>1142792</bidid>
+        <bidname>1700-G05-К-Y03-00163-2021 «48-ГРНУ-ОИТСО УБ-2021 Техническое обслуживание технических средств охраны
+            Кстовской БПТО и КО (2021 год)»
+        </bidname>
+        <bidno>1</bidno>
+        <bidstatusname>Прием заявок</bidstatusname>
+        <bidsubcontractorsrequirement>0</bidsubcontractorsrequirement>
+        <bidsubcontractorsrequirementname>Нет</bidsubcontractorsrequirementname>
+    </bidinfo>
+    <bidplaceinfo>
+        <biddeliveryplace>В соответствии с документацией о закупке</biddeliveryplace>
+        <biddeliveryplaceindicationtype>GL</biddeliveryplaceindicationtype>
+        <biddeliveryplaceindicationtypename>По лоту в целом</biddeliveryplaceindicationtypename>
+    </bidplaceinfo>
+    <bidpriceinfo>
+        <bidcurrency>267655</bidcurrency>
+        <bidcurrencyname>Российский рубль</bidcurrencyname>
+        <bidprice>307170.24</bidprice>
+        <bidpriceculctype>lotPrice</bidpriceculctype>
+        <bidpriceculctypename>Сведения о начальной максимальной цене договора (цене лота)</bidpriceculctypename>
+        <bidpricemin>307170.24</bidpricemin>
+    </bidpriceinfo>
+    <bidtenderinfo>
+        <bidauctionstepmaxpercent>5.00</bidauctionstepmaxpercent>
+        <bidauctionstepminpercent>0.50</bidauctionstepminpercent>
+    </bidtenderinfo>
+    <bidcustomerdatas>
+        <bidcustomerdata>
+            <bidcustomerdatainfo>
+                <bidcustomerinfo>
+                    <bidcustomerbutsid>1114794</bidcustomerbutsid>
+                    <bidcustomerid>649864</bidcustomerid>
+                    <bidcustomeriko>55260900725526001001</bidcustomeriko>
+                    <bidcustomerinn>5260900725</bidcustomerinn>
+                    <bidcustomerkpp>526001001</bidcustomerkpp>
+                    <bidcustomernickname>АО "ТРАНСНЕФТЬ-ВЕРХНЯЯ ВОЛГА"</bidcustomernickname>
+                    <bidcustomerogrn>1025203014748</bidcustomerogrn>
+                    <bidmaincustomer>1</bidmaincustomer>
+                </bidcustomerinfo>
+                <bidcustomerpriceinfo>
+                    <bidcustomeramount>307170.24</bidcustomeramount>
+                </bidcustomerpriceinfo>
+                <planinfo>
+                    <bideisexcludepurchasefromplan>0</bideisexcludepurchasefromplan>
+                    <bideisexcludepurchasefromplanname>Нет</bideisexcludepurchasefromplanname>
+                    <planpositionordinalnumber>3889</planpositionordinalnumber>
+                    <planregistrationnumber>2190388758</planregistrationnumber>
+                </planinfo>
+            </bidcustomerdatainfo>
+        </bidcustomerdata>
+    </bidcustomerdatas>
+</bidinfototal>

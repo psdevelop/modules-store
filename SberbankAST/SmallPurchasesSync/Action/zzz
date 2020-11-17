@@ -1,0 +1,716 @@
+<datarow>
+    <total>
+        <value>77</value>
+        <relation>eq</relation>
+    </total>
+    <max_score />
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>642448</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>Опубликован(-а)</purchStateName>
+            <auctResultDate>17.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <TradeSectionId>35</TradeSectionId>
+            <purchCodeTerm>SBR035-200015918900084</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/642448</objectHrefTerm>
+            <OrgName>УФПС БРЯНСКОЙ ОБЛАСТИ</OrgName>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>10.09.2020 09:00</RequestStartDate>
+            <PurchaseId>642448</PurchaseId>
+            <RequestAcceptDate>16.09.2020 09:00</RequestAcceptDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <RequestDate>16.09.2020 09:00</RequestDate>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Оказание услуг по промывке и гидравлическим испытаниям трубопроводов систем отопления ОПС Стародубского почтамта для нужд УФПС Брянской области.</purchName>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200015918900084</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>1</needPayment>
+            <PublicDate>09.09.2020 16:43</PublicDate>
+            <purchAmount>147647.34</purchAmount>
+        </_source>
+        <sort>1599669780000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>642447</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>Опубликован(-а)</purchStateName>
+            <auctResultDate>17.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <TradeSectionId>35</TradeSectionId>
+            <purchCodeTerm>SBR035-200015918900083</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/642447</objectHrefTerm>
+            <OrgName>УФПС БРЯНСКОЙ ОБЛАСТИ</OrgName>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>10.09.2020 09:00</RequestStartDate>
+            <PurchaseId>642447</PurchaseId>
+            <RequestAcceptDate>16.09.2020 09:00</RequestAcceptDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <RequestDate>16.09.2020 09:00</RequestDate>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Оказание услуг по промывке и гидравлическим испытаниям трубопроводов систем отопления ОПС Брянского почтамта для нужд УФПС Брянской области.</purchName>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200015918900083</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>0</needPayment>
+            <PublicDate>09.09.2020 16:42</PublicDate>
+            <purchAmount>36430.46</purchAmount>
+        </_source>
+        <sort>1599669720000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>641922</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>Прием заявок</purchStateName>
+            <auctResultDate>19.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС МУРМАНСКОЙ ОБЛАСТИ</OrgName>
+            <PurchaseExplanationRequestHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseExplanationRequest/9/1/0/641922</PurchaseExplanationRequestHrefTerm>
+            <PurchaseId>641922</PurchaseId>
+            <RequestAcceptDate>16.09.2020 10:00</RequestAcceptDate>
+            <RequestDate>16.09.2020 10:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200010719700082</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>1</needPayment>
+            <PublicDate>08.09.2020 17:38</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200010719700082</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/641922</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>09.09.2020 10:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Поставка пломб свинцовых для нужд УФПС Мурманской области</purchName>
+            <purchAmount>103776</purchAmount>
+        </_source>
+        <sort>1599586680000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>641884</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>Прием заявок</purchStateName>
+            <auctResultDate>18.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС СМОЛЕНСКОЙ ОБЛАСТИ</OrgName>
+            <PurchaseExplanationRequestHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseExplanationRequest/9/1/0/641884</PurchaseExplanationRequestHrefTerm>
+            <PurchaseId>641884</PurchaseId>
+            <RequestAcceptDate>16.09.2020 09:00</RequestAcceptDate>
+            <RequestDate>16.09.2020 09:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200016849000070</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>0</needPayment>
+            <PublicDate>08.09.2020 16:58</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200016849000070</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/641884</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>09.09.2020 09:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Поставка почтовых пакетов полиэтиленовых «ЕКОМ Маркетплейс» для нужд УФПС Смоленской области</purchName>
+            <purchAmount>78528</purchAmount>
+        </_source>
+        <sort>1599584280000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>641674</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Аукцион в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>Прием заявок</purchStateName>
+            <auctResultDate>29.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС ВОЛГОГРАДСКОЙ ОБЛАСТИ</OrgName>
+            <PurchaseExplanationRequestHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseExplanationRequest/8/1/0/641674</PurchaseExplanationRequestHrefTerm>
+            <PurchaseId>641674</PurchaseId>
+            <RequestAcceptDate>16.09.2020 09:00</RequestAcceptDate>
+            <RequestDate>16.09.2020 09:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200014991300068</purchCode>
+            <AuctionBeginDate>23.09.2020 09:00</AuctionBeginDate>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>1</needPayment>
+            <PublicDate>08.09.2020 13:51</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200014991300068</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/8/0/0/641674</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>09.09.2020 09:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Выполнение работ по подготовке систем отопления Волжского почтамта к отопительному сезону 2020/2021 гг. для нужд УФПС Волгоградской области</purchName>
+            <purchAmount>100347.6</purchAmount>
+        </_source>
+        <sort>1599573060000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>641533</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>Прием заявок</purchStateName>
+            <auctResultDate>18.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС ПСКОВСКОЙ ОБЛАСТИ</OrgName>
+            <PurchaseExplanationRequestHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseExplanationRequest/9/1/0/641533</PurchaseExplanationRequestHrefTerm>
+            <PurchaseId>641533</PurchaseId>
+            <RequestAcceptDate>16.09.2020 09:00</RequestAcceptDate>
+            <RequestDate>16.09.2020 09:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200015688600054</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>1</needPayment>
+            <PublicDate>08.09.2020 09:38</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200015688600054</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/641533</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>09.09.2020 00:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Поставка пломб свинцовых для нужд УФПС Псковской области</purchName>
+            <purchAmount>170040</purchAmount>
+        </_source>
+        <sort>1599557880000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>641335</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Аукцион в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>Прием заявок</purchStateName>
+            <auctResultDate>29.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС Республики Башкортостан</OrgName>
+            <PurchaseExplanationRequestHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseExplanationRequest/8/1/0/641335</PurchaseExplanationRequestHrefTerm>
+            <PurchaseId>641335</PurchaseId>
+            <RequestAcceptDate>17.09.2020 09:00</RequestAcceptDate>
+            <RequestDate>17.09.2020 09:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200000949600064</purchCode>
+            <AuctionBeginDate>25.09.2020 09:00</AuctionBeginDate>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>1</needPayment>
+            <PublicDate>07.09.2020 16:12</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200000949600064</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/8/0/0/641335</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>08.09.2020 09:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Выполнение работ по капитальному ремонту системы отопления отделения почтовой связи по адресу:452452, Республика Башкортостан, г.Бирск, ул.Чеверева, д143 А для нужд УФПС Республики Башкортостан</purchName>
+            <purchAmount>265747.33</purchAmount>
+        </_source>
+        <sort>1599495120000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>641115</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Аукцион в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>Прием заявок</purchStateName>
+            <auctResultDate>18.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС РЕСПУБЛИКИ САХА (ЯКУТИЯ)</OrgName>
+            <PurchaseExplanationRequestHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseExplanationRequest/8/1/0/641115</PurchaseExplanationRequestHrefTerm>
+            <PurchaseId>641115</PurchaseId>
+            <RequestAcceptDate>15.09.2020 04:00</RequestAcceptDate>
+            <RequestDate>15.09.2020 04:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200014225500100</purchCode>
+            <AuctionBeginDate>17.09.2020 08:00</AuctionBeginDate>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>0</needPayment>
+            <PublicDate>07.09.2020 11:13</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200014225500100</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/8/0/0/641115</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>08.09.2020 00:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Выполнение работ по промывке системы отопления в ОПС Верхневилюйск для нужд УФПС Республики Саха (Якутия) АО «Почта России»</purchName>
+            <purchAmount>24360</purchAmount>
+        </_source>
+        <sort>1599477180000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>641080</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>Прием заявок</purchStateName>
+            <auctResultDate>16.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС РЕСПУБЛИКИ КОМИ</OrgName>
+            <PurchaseExplanationRequestHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseExplanationRequest/9/1/0/641080</PurchaseExplanationRequestHrefTerm>
+            <PurchaseId>641080</PurchaseId>
+            <RequestAcceptDate>15.09.2020 09:30</RequestAcceptDate>
+            <RequestDate>15.09.2020 09:30</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200012408700074</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>0</needPayment>
+            <PublicDate>07.09.2020 10:40</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200012408700074</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/641080</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>08.09.2020 00:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Поставка металлических тубусов для хранения ключей для нужд режимно-секретной группы и группы специальных работ УФПС Республики Коми</purchName>
+            <purchAmount>9150</purchAmount>
+        </_source>
+        <sort>1599475200000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>639606</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>Прием заявок</purchStateName>
+            <auctResultDate>17.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС Г.МОСКВЫ</OrgName>
+            <PurchaseExplanationRequestHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseExplanationRequest/9/1/0/639606</PurchaseExplanationRequestHrefTerm>
+            <PurchaseId>639606</PurchaseId>
+            <RequestAcceptDate>14.09.2020 00:00</RequestAcceptDate>
+            <RequestDate>14.09.2020 00:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200007735000830</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>1</needPayment>
+            <PublicDate>02.09.2020 15:12</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200007735000830</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/639606</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>03.09.2020 00:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Поставка дров для УФПС Московской области</purchName>
+            <purchAmount>179663.4</purchAmount>
+        </_source>
+        <sort>1599059520000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>638879</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>Не состоялся(-ась)</purchStateName>
+            <auctResultDate>10.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС РЕСПУБЛИКИ КОМИ</OrgName>
+            <PurchaseId>638879</PurchaseId>
+            <RequestAcceptDate>09.09.2020 09:00</RequestAcceptDate>
+            <RequestDate>09.09.2020 09:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200012408700071</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>0</needPayment>
+            <PublicDate>01.09.2020 10:23</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200012408700071</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/638879</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>02.09.2020 00:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Выполнение работ по огнезащитной обработке деревянных конструкций на объекте почтовой связи УФПС Республики Коми</purchName>
+            <purchAmount>69360</purchAmount>
+        </_source>
+        <sort>1598955780000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>638704</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>В процессе проведения</purchStateName>
+            <auctResultDate>10.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС НОВГОРОДСКОЙ ОБЛАСТИ</OrgName>
+            <PurchaseId>638704</PurchaseId>
+            <RequestAcceptDate>08.09.2020 09:00</RequestAcceptDate>
+            <RequestDate>08.09.2020 09:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200015020400040</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>1</needPayment>
+            <PublicDate>31.08.2020 18:21</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200015020400040</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/638704</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>01.09.2020 09:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Оказание услуг по техническому обслуживанию  16-ти приборов учета тепловой энергии на объектах почтовой связи для нужд УФПС Новгородской области</purchName>
+            <purchAmount>458667.2</purchAmount>
+        </_source>
+        <sort>1598898060000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>638669</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>В процессе проведения</purchStateName>
+            <auctResultDate>14.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС СТАВРОПОЛЬСКОГО КРАЯ</OrgName>
+            <PurchaseId>638669</PurchaseId>
+            <RequestAcceptDate>07.09.2020 09:00</RequestAcceptDate>
+            <RequestDate>07.09.2020 09:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200016518700195</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>1</needPayment>
+            <PublicDate>31.08.2020 17:15</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200016518700195</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/638669</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>01.09.2020 00:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Поставка именных вещей для нужд УФПС Ставропольского края</purchName>
+            <purchAmount>223958.03</purchAmount>
+        </_source>
+        <sort>1598894100000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>638573</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Аукцион в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>В процессе проведения</purchStateName>
+            <auctResultDate>14.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС ВОЛОГОДСКОЙ ОБЛАСТИ</OrgName>
+            <PurchaseId>638573</PurchaseId>
+            <RequestAcceptDate>09.09.2020 11:00</RequestAcceptDate>
+            <RequestDate>09.09.2020 11:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200016113200139</purchCode>
+            <AuctionBeginDate>11.09.2020 11:00</AuctionBeginDate>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>1</needPayment>
+            <PublicDate>31.08.2020 15:00</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200016113200139</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/8/0/0/638573</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>01.09.2020 00:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Поставка колотых дров Тотемский почтамт для нужд УФПС Вологодской области</purchName>
+            <purchAmount>430178.4</purchAmount>
+        </_source>
+        <sort>1598886000000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>638478</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>В процессе проведения</purchStateName>
+            <auctResultDate>11.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС КРАСНОЯРСКОГО КРАЯ</OrgName>
+            <PurchaseId>638478</PurchaseId>
+            <RequestAcceptDate>09.09.2020 09:00</RequestAcceptDate>
+            <RequestDate>09.09.2020 09:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200005256500094</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>0</needPayment>
+            <PublicDate>31.08.2020 13:13</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200005256500094</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/638478</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>01.09.2020 00:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Поставка дорожных знаков для нужд ОП Автобаза УФПС Красноярского края</purchName>
+            <purchAmount>20390.67</purchAmount>
+        </_source>
+        <sort>1598879580000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>638353</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>В процессе проведения</purchStateName>
+            <auctResultDate>10.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС АЛТАЙСКОГО КРАЯ</OrgName>
+            <PurchaseId>638353</PurchaseId>
+            <RequestAcceptDate>08.09.2020 06:00</RequestAcceptDate>
+            <RequestDate>08.09.2020 06:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200014393300083</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>1</needPayment>
+            <PublicDate>31.08.2020 08:50</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200014393300083</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/638353</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>01.09.2020 00:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Оказание услуг по обслуживанию  котельной в рамках подготовки к отопительному сезону по адресу: 658560, Мамонтовский почтамт, Алтайский край, Мамонтовский район, с. Мамонтово, ул. Советская,117 для нужд УФПС Алтайского края.</purchName>
+            <purchAmount>193188.67</purchAmount>
+        </_source>
+        <sort>1598863800000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>638344</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>В процессе проведения</purchStateName>
+            <auctResultDate>11.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС ПЕРМСКОГО КРАЯ</OrgName>
+            <PurchaseId>638344</PurchaseId>
+            <RequestAcceptDate>07.09.2020 09:00</RequestAcceptDate>
+            <RequestDate>07.09.2020 09:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200005327000084</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>0</needPayment>
+            <PublicDate>31.08.2020 07:38</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200005327000084</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/638344</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>01.09.2020 09:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Выполнение работ по изготовлению планов эвакуации людей при пожаре на объектах УФПС Пермского края</purchName>
+            <purchAmount>37440</purchAmount>
+        </_source>
+        <sort>1598859480000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>638163</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Конкурс в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>В процессе проведения</purchStateName>
+            <auctResultDate>17.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС Г. САНКТ-ПЕТЕРБУРГА И ЛЕНИНГРАДСКОЙ ОБЛАСТИ</OrgName>
+            <PurchaseId>638163</PurchaseId>
+            <RequestAcceptDate>09.09.2020 10:00</RequestAcceptDate>
+            <RequestDate>09.09.2020 10:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200014738900391</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>1</needPayment>
+            <PublicDate>28.08.2020 10:49</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200014738900391</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/3/0/0/638163</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>31.08.2020 00:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Выполнение работ по разработке проектов перепланировок ОПС Санкт-Петербург 198035, расположенного по адресу: г.Санкт-Петербург, ул.Двинская, д.15, лит.А, ОПС Санкт-Петербург 197706, расположенного по адресу: Санкт-Петербург, Сестрорецк, ул.Токарева, 18а  - для нужд УФПС г.Санкт-Петербурга и Ленинградской области</purchName>
+            <purchAmount>499881.6</purchAmount>
+        </_source>
+        <sort>1598611740000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>638158</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Запрос котировок в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>В процессе проведения</purchStateName>
+            <auctResultDate>11.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС АЛТАЙСКОГО КРАЯ</OrgName>
+            <PurchaseId>638158</PurchaseId>
+            <RequestAcceptDate>09.09.2020 06:00</RequestAcceptDate>
+            <RequestDate>09.09.2020 06:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200014393300082</purchCode>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>1</needPayment>
+            <PublicDate>28.08.2020 10:35</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200014393300082</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/9/0/0/638158</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>31.08.2020 00:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Поставка пакетов полиэтиленовых для газет для нужд УФПС Алтайского края.</purchName>
+            <purchAmount>227976</purchAmount>
+        </_source>
+        <sort>1598610900000</sort>
+        <sort>0</sort>
+    </hits>
+    <hits>
+        <_index>utp_purchase_public_2020_08_11</_index>
+        <_type>_doc</_type>
+        <_id>638141</_id>
+        <_score>0</_score>
+        <_source>
+            <PurchaseTypeName>Аукцион в электронной форме, участниками которого могут являться только субъекты малого и среднего предпринимательства</PurchaseTypeName>
+            <purchStateName>В процессе проведения</purchStateName>
+            <auctResultDate>10.09.2020 00:00</auctResultDate>
+            <CreateRequestAlowed>0</CreateRequestAlowed>
+            <IntegratorCode></IntegratorCode>
+            <TradeSectionId>35</TradeSectionId>
+            <OrgName>УФПС РЕСПУБЛИКИ САХА (ЯКУТИЯ)</OrgName>
+            <PurchaseId>638141</PurchaseId>
+            <RequestAcceptDate>07.09.2020 04:00</RequestAcceptDate>
+            <RequestDate>07.09.2020 04:00</RequestDate>
+            <SourceTerm>Закупки АО «Почта России»</SourceTerm>
+            <purchCode>SBR035-200014225500097</purchCode>
+            <AuctionBeginDate>09.09.2020 08:00</AuctionBeginDate>
+            <IsSMP>1</IsSMP>
+            <purchCurrency>RUB</purchCurrency>
+            <needPayment>1</needPayment>
+            <PublicDate>28.08.2020 09:40</PublicDate>
+            <IntegratorCodeTerm></IntegratorCodeTerm>
+            <purchCodeTerm>SBR035-200014225500097</purchCodeTerm>
+            <objectHrefTerm>http://utp.sberbank-ast.ru/RussianPost/NBT/PurchaseView/8/0/0/638141</objectHrefTerm>
+            <isIncrease>false</isIncrease>
+            <RequestStartDate>31.08.2020 00:00</RequestStartDate>
+            <SourceHrefTerm>http://utp.sberbank-ast.ru/RussianPost/List/PurchaseList/</SourceHrefTerm>
+            <PurchaseTypeType>1</PurchaseTypeType>
+            <purchName>Выполнение работ по промывке систем отопления в ОСП Автобаза, ЯМСЦ для нужд УФПС Республики Саха (Якутия) АО «Почта России»</purchName>
+            <purchAmount>180000</purchAmount>
+        </_source>
+        <sort>1598607600000</sort>
+        <sort>0</sort>
+    </hits>
+</datarow>
